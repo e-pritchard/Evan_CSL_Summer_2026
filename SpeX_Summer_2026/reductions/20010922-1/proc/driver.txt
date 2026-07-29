@@ -1,0 +1,37 @@
+# pyspextool batch reduction driver file for spex observations on 2001/9/22
+# Code version 2024 May 24
+
+# Observational information
+INSTRUMENT = spex
+UT_DATE = 2001/9/22
+PROGRAM = 2001B099
+OBSERVER = Sheppard
+
+# Folders and files
+DATA_FOLDER = ./data
+CALS_FOLDER = .\cals
+PROC_FOLDER = .\proc
+QA_FOLDER = .\qa
+SCIENCE_FILE_PREFIX = nt2
+SPECTRA_FILE_PREFIX = spectra
+COMBINED_FILE_PREFIX = combspec
+CALIBRATED_FILE_PREFIX = calspec
+STITCHED_FILE_PREFIX = stitched
+
+# Science observations
+#	Mode	Target Type	Target Sub	Target Name	Target Prefix	Target Files	Target Flat	Target Wavecal	Std Sub	Std Name	Std SpT	Std B	Std V	Std Prefix	Std Files	Std Flat	Std Wavecal	Options (key=value)
+OBS_SET	Prism	fixed-ps	A-B	HD142557	nt2	295-300	flat301-306.fits	wavecal301-306.fits	A-B	HD174719	G5/6V	8.19	7.51	nt2	283-288	flat289-294.fits	wavecal289-294.fits
+OBS_SET	Prism	moving-ps	A-B	2001 KX67	nt2	307-326	flat301-306.fits	wavecal301-306.fits	A-B	HD 153	G1V	8.97	8.36	nt2	359-364	flat365-370.fits	wavecal365-370.fits
+OBS_SET	Prism	moving-ps	A-B	2001 OG108	nt2	339-358	flat333-338.fits	wavecal333-338.fits	A-B	HD6664	G1V	8.34	7.78	nt2	327-332	flat333-338.fits	wavecal333-338.fits
+
+# Lamp calibrations
+FLAT_FILE_PREFIX = flat
+ARC_FILE_PREFIX = arc
+CAL_SETS = 235-240,253-258,289-294,301-306,333-338,365-370
+
+# Notes
+# 
+# 
+# 
+# 
+# 

@@ -1,0 +1,57 @@
+# pyspextool batch reduction driver file for spex observations on 2001/9/29
+# Code version 2024 May 24
+
+# Observational information
+INSTRUMENT = spex
+UT_DATE = 2001/9/29
+PROGRAM = 2001B072
+OBSERVER = Kelley
+
+# Folders and files
+DATA_FOLDER = ./data
+CALS_FOLDER = .\cals
+PROC_FOLDER = .\proc
+QA_FOLDER = .\qa
+SCIENCE_FILE_PREFIX = spec
+SPECTRA_FILE_PREFIX = spectra
+COMBINED_FILE_PREFIX = combspec
+CALIBRATED_FILE_PREFIX = calspec
+STITCHED_FILE_PREFIX = stitched
+
+# Science observations
+#	Mode	Target Type	Target Sub	Target Name	Target Prefix	Target Files	Target Flat	Target Wavecal	Std Sub	Std Name	Std SpT	Std B	Std V	Std Prefix	Std Files	Std Flat	Std Wavecal	Options (key=value)
+OBS_SET	Prism	moving-ps	A-B	824 Anastasia	spec	1-10	flat170-177.fits	wavecal170-177.fits	A-B	SAO143111	G5IV	8.66	7.96	spec	29-38,90-99,150-159	flat170-177.fits	wavecal170-177.fits
+OBS_SET	Prism	moving-ps	A-B	44 Nysa	spec	11-28,49-60	flat170-177.fits	wavecal170-177.fits	A-B	SAO164082	K0III	8.69	7.79	spec	39-48,100-109,160-169,182-191,224-233	flat170-177.fits	wavecal170-177.fits
+OBS_SET	Prism	moving-ps	A-B	20 Massalia	spec	61-74	flat170-177.fits	wavecal170-177.fits	A-B	SAO164082	K0III	8.69	7.79	spec	39-48,100-109,160-169,182-191,224-233	flat170-177.fits	wavecal170-177.fits
+OBS_SET	Prism	moving-ps	A-B	877 Walkure	spec	75-78	flat170-177.fits	wavecal170-177.fits	A-B	SAO164082	K0III	8.69	7.79	spec	39-48,100-109,160-169,182-191,224-233	flat170-177.fits	wavecal170-177.fits
+OBS_SET	Prism	moving-ps	A-B	3494 Purple Mountain	spec	146-149,178-181	flat170-177.fits	wavecal170-177.fits	A-B	SAO164082	K0III	8.69	7.79	spec	39-48,100-109,160-169,182-191,224-233	flat170-177.fits	wavecal170-177.fits
+OBS_SET	Prism	moving-ps	A-B	SAO128191	spec	192-201,288-297,350-369	flat332-339.fits	wavecal332-339.fits	A-B	sao128553	K0III	9.715	9.297	spec	258-267,404-413	flat332-339.fits	wavecal332-339.fits
+OBS_SET	Prism	moving-ps	A-B	1025 Riema	spec	212-223	flat170-177.fits	wavecal170-177.fits	A-B	SAO128553	K0III	9.715	9.297	spec	202-211,298-307,370-379	flat332-339.fits	wavecal332-339.fits
+OBS_SET	Prism	moving-ps	A-B	434 Hungaria	spec	234-247	flat170-177.fits	wavecal170-177.fits	A-B	sao128553	K0III	9.715	9.297	spec	258-267,404-413	flat332-339.fits	wavecal332-339.fits
+OBS_SET	Prism	moving-ps	A-B	sao128191	spec	248-257,394-403	flat332-339.fits	wavecal332-339.fits	A-B	sao128553	K0III	9.715	9.297	spec	258-267,404-413	flat332-339.fits	wavecal332-339.fits
+OBS_SET	Prism	moving-ps	A-B	3032 Evans	spec	268-277	flat332-339.fits	wavecal332-339.fits	A-B	sao128553	K0III	9.715	9.297	spec	258-267,404-413	flat332-339.fits	wavecal332-339.fits
+OBS_SET	Prism	moving-ps	A-B	1466 Mundleria	spec	278-287	flat332-339.fits	wavecal332-339.fits	A-B	SAO128553	K0III	9.715	9.297	spec	202-211,298-307,370-379	flat332-339.fits	wavecal332-339.fits
+OBS_SET	Prism	moving-ps	A-B	389 Industria	spec	308-313	flat332-339.fits	wavecal332-339.fits	A-B	sao128553	K0III	9.715	9.297	spec	258-267,404-413	flat332-339.fits	wavecal332-339.fits
+OBS_SET	Prism	moving-ps	A-B	101 Helena	spec	314-325	flat332-339.fits	wavecal332-339.fits	A-B	SAO128553	K0III	9.715	9.297	spec	202-211,298-307,370-379	flat332-339.fits	wavecal332-339.fits
+OBS_SET	Prism	moving-ps	A-B	1916 Boreas	spec	326-331,340-341	flat332-339.fits	wavecal332-339.fits	A-B	sao128553	K0III	9.715	9.297	spec	258-267,404-413	flat332-339.fits	wavecal332-339.fits
+OBS_SET	Prism	moving-ps	A-B	2865 Laurel	spec	342-349	flat332-339.fits	wavecal332-339.fits	A-B	sao93012	G5	9.46	8.23	spec	414-423,442-451	flat472-479.fits	wavecal472-479.fits
+OBS_SET	Prism	moving-ps	A-B	306 Unitas	spec	380-393	flat332-339.fits	wavecal332-339.fits	A-B	sao93012	G5	9.46	8.23	spec	414-423,442-451	flat472-479.fits	wavecal472-479.fits
+OBS_SET	Prism	moving-ps	A-B	2962 Otto	spec	424-435	flat472-479.fits	wavecal472-479.fits	A-B	sao93012	G5	9.46	8.23	spec	414-423,442-451	flat472-479.fits	wavecal472-479.fits
+OBS_SET	Prism	moving-ps	A-B	1750 Eckert	spec	436-441	flat472-479.fits	wavecal472-479.fits	A-B	sao93012	G5	9.46	8.23	spec	414-423,442-451	flat472-479.fits	wavecal472-479.fits
+OBS_SET	Prism	moving-ps	A-B	620 Draconia	spec	462-471,480-481	flat472-479.fits	wavecal472-479.fits	A-B	sao93012	G5	9.46	8.23	spec	414-423,442-451	flat472-479.fits	wavecal472-479.fits
+OBS_SET	Prism	fixed-ps	A-B	66 Maja	spec	482-491	flat472-479.fits	wavecal472-479.fits	A-B	sao93936 Hyades 64	G2+V	8.78	8.12	spec	502-511	flat472-479.fits	wavecal472-479.fits
+OBS_SET	Prism	fixed-ps	A-B	4 Vesta	spec	512-531	flat568-575.fits	wavecal568-575.fits	A-B	SAO93936 Hyades 64	G2+V	8.78	8.12	spec	452-461	flat472-479.fits	wavecal472-479.fits
+OBS_SET	Prism	moving-ps	A-B	741 Botolphia	spec	532-539	flat568-575.fits	wavecal568-575.fits	A-B	SAO93936 Hyades64	G2+V	8.78	8.12	spec	558-567	flat568-575.fits	wavecal568-575.fits
+OBS_SET	Prism	moving-ps	A-B	569 Misa	spec	540-547	flat568-575.fits	wavecal568-575.fits	A-B	SAO93936 Hyades64	G2+V	8.78	8.12	spec	558-567	flat568-575.fits	wavecal568-575.fits
+
+# Lamp calibrations
+FLAT_FILE_PREFIX = flat
+ARC_FILE_PREFIX = arc
+CAL_SETS = 170-177,332-339,472-479,568-575
+
+# Notes
+# 89 skipped to maintain even number of files
+# 79-88 has bad images and the code cannot produce spectra for these files. Given that there are only four files, 75-78 left for target 877 Walkure, it may ends up that this target will have a bad reduction.
+# 
+# 
+# 

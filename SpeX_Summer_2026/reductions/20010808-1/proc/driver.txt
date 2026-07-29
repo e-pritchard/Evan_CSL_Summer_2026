@@ -1,0 +1,43 @@
+# pyspextool batch reduction driver file for spex observations on 2001/8/8
+# Code version 2024 May 24
+
+# Observational information
+INSTRUMENT = spex
+UT_DATE = 2001/8/8
+PROGRAM = 2001B072
+OBSERVER = Kelley
+
+# Folders and files
+DATA_FOLDER = ./data
+CALS_FOLDER = .\cals
+PROC_FOLDER = .\proc
+QA_FOLDER = .\qa
+SCIENCE_FILE_PREFIX = spec
+SPECTRA_FILE_PREFIX = spectra
+COMBINED_FILE_PREFIX = combspec
+CALIBRATED_FILE_PREFIX = calspec
+STITCHED_FILE_PREFIX = stitched
+
+# Science observations
+#	Mode	Target Type	Target Sub	Target Name	Target Prefix	Target Files	Target Flat	Target Wavecal	Std Sub	Std Name	Std SpT	Std B	Std V	Std Prefix	Std Files	Std Flat	Std Wavecal	Options (key=value)
+OBS_SET	Prism	moving-ps	A-B	246 Asporina	spec	40-41,44-51	flat212-219.fits	wavecal212-219.fits	A-B	SAO143111	G5IV	8.66	7.96	spec	13-36,58-69,96-107,220-231,244-255	flat212-219.fits	wavecal212-219.fits
+OBS_SET	Prism	moving-ps	A-B	44 Nysa	spec	70-81,108-133	flat212-219.fits	wavecal212-219.fits	A-B	SAO164082	K0III	8.69	7.79	spec	134-145,256-267,300-311	flat280-287.fits	wavecal280-287.fits
+OBS_SET	Prism	moving-ps	A-B	1650 Heckmann	spec	82-95	flat212-219.fits	wavecal212-219.fits	A-B	SAO143111	G5IV	8.66	7.96	spec	13-36,58-69,96-107,220-231,244-255	flat212-219.fits	wavecal212-219.fits
+OBS_SET	Prism	moving-ps	A-B	877 Walkure	spec	232-243	flat212-219.fits	wavecal212-219.fits	A-B	SAO164082	K0III	8.69	7.79	spec	134-145,256-267,300-311	flat280-287.fits	wavecal280-287.fits
+OBS_SET	Prism	moving-ps	A-B	2139 Makharadze	spec	268-279	flat280-287.fits	wavecal280-287.fits	A-B	SAO164082	K0III	8.69	7.79	spec	134-145,256-267,300-311	flat280-287.fits	wavecal280-287.fits
+OBS_SET	Prism	moving-ps	A-B	3494 Purple Mountain	spec	312-323	flat348-355.fits	wavecal348-355.fits	A-B	SAO128192	G0	10.85	10.25	spec	288-299,324-335,368-379,386-397	flat348-355.fits	wavecal348-355.fits
+OBS_SET	Prism	moving-ps	A-B	434 Hungaria	spec	336-347,356-367	flat348-355.fits	wavecal348-355.fits	A-B	SAO128192	G0	10.85	10.25	spec	288-299,324-335,368-379,386-397	flat348-355.fits	wavecal348-355.fits
+OBS_SET	Prism	moving-ps	A-B	253 Mathilde	spec	380-385	flat408-415.fits	wavecal408-415.fits	A-B	SAO128192	G0	10.85	10.25	spec	288-299,324-335,368-379,386-397	flat348-355.fits	wavecal348-355.fits
+OBS_SET	Prism	moving-ps	A-B	3103 Eger	spec	398-407	flat408-415.fits	wavecal408-415.fits	A-B	SAO128192	G0	10.85	10.25	spec	288-299,324-335,368-379,386-397	flat348-355.fits	wavecal348-355.fits
+
+# Lamp calibrations
+FLAT_FILE_PREFIX = flat
+ARC_FILE_PREFIX = arc
+CAL_SETS = 212-219,280-287,348-355,408-415
+
+# Notes
+# I have skipped 37-38 for aperture overlapping and 39 for even number of files. 42-43 and 52-57 were also skipped for the code did not generate their spectra and later cost a problem at spectra combining state.
+# 
+# 
+# 
+# 

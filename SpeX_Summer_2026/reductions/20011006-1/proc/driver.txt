@@ -1,0 +1,40 @@
+# pyspextool batch reduction driver file for spex observations on 2001/10/6
+# Code version 2024 May 24
+
+# Observational information
+INSTRUMENT = spex
+UT_DATE = 2001/10/6
+PROGRAM = 2001B047
+OBSERVER = Abell
+
+# Folders and files
+DATA_FOLDER = ./data
+CALS_FOLDER = .\cals
+PROC_FOLDER = .\proc
+QA_FOLDER = .\qa
+SCIENCE_FILE_PREFIX = spec
+SPECTRA_FILE_PREFIX = spectra
+COMBINED_FILE_PREFIX = combspec
+CALIBRATED_FILE_PREFIX = calspec
+STITCHED_FILE_PREFIX = stitched
+
+# Science observations
+#	Mode	Target Type	Target Sub	Target Name	Target Prefix	Target Files	Target Flat	Target Wavecal	Std Sub	Std Name	Std SpT	Std B	Std V	Std Prefix	Std Files	Std Flat	Std Wavecal	Options (key=value)
+OBS_SET	Prism	moving-ps	A-B	22771 (1999 CU3)	spec	33-42,121-130	flat79-84.fits	wavecal79-84.fits	A-B	SAO 88985	G0V	9.18	8.67	spec	23-32,43-52,111-120,131-140	flat79-84.fits	wavecal79-84.fits
+OBS_SET	Prism	fixed-ps	A-B	349 Dembowska	spec	69-78	flat79-84.fits	wavecal79-84.fits	A-B	SAO 190155	G2V	9.97	9.34	spec	59-68,95-104	flat79-84.fits	wavecal79-84.fits
+OBS_SET	Prism	moving-ps	A-B	1998 ST27	spec	167-180,257-266	flat151-156.fits	wavecal151-156.fits	A-B	SAO 108337	G2V	9.28	0.0	spec	157-166,181-190,247-256,267-276	flat231-236.fits	wavecal231-236.fits
+OBS_SET	Prism	moving-ps	A-B	2001 SG10	spec	203-220,287-296	flat231-236.fits	wavecal231-236.fits	A-B	SAO 109339	G0V	9.3	8.75	spec	191-200,221-230,277-286,297-306	flat231-236.fits	wavecal231-236.fits
+OBS_SET	Prism	moving-ps	A-B	719 Albert	spec	333-352	flat353-358.fits	wavecal353-358.fits	A-B	SAO 129706	G2V	7.52	6.9	spec	323-332,359-368	flat353-358.fits	wavecal353-358.fits
+OBS_SET	Prism	moving-ps	A-B	1904 Massevitch	spec	389-404	flat353-358.fits	wavecal353-358.fits	A-B	SAO 112476	G1V	9.47	8.82	spec	379-388,405-414	flat353-358.fits	wavecal353-358.fits
+
+# Lamp calibrations
+FLAT_FILE_PREFIX = flat
+ARC_FILE_PREFIX = arc
+CAL_SETS = 1-6,17-22,53-58,79-84,105-110,151-156,231-236,307-312,353-358
+
+# Notes
+# 201-202 skipped for bad images
+# 
+# 
+# 
+# 

@@ -1,0 +1,37 @@
+# pyspextool batch reduction driver file for spex observations on 2001-02-17
+# Code version 2024 Feb 25
+
+# Observational information
+INSTRUMENT = spex
+UT_DATE = 2001-02-17
+PROGRAM = 2001A109
+OBSERVER = Emery
+
+# Folders and files
+DATA_FOLDER = ./data
+CALS_FOLDER = ./cals
+PROC_FOLDER = ./proc
+QA_FOLDER = ./qa
+SCIENCE_FILE_PREFIX = sao41869
+SPECTRA_FILE_PREFIX = spectra
+COMBINED_FILE_PREFIX = combspec
+CALIBRATED_FILE_PREFIX = calspec
+STITCHED_FILE_PREFIX = stitched
+
+# Science observations
+#	Mode	Target Type	Target Sub	Target Name	Target Prefix	Target Files	Target Flat	Target Wavecal	Std Sub	Std Name	Std Prefix	Std Files	Std Flat	Std Wavecal	Options (key=value)
+OBS_SET	Prism	moving-ps	A-B	2797 teucer	teucer	14-21,24-31	flat1-11.fits	wavecal1-11.fits	A-B	sao 41869	sao41869	12-13,22-23,32-33	flat1-11.fits	wavecal1-11.fits
+OBS_SET	Prism	fixed-ps	A-B	sao 98291	sao98291	34-35	flat1-11.fits	wavecal1-11.fits	A-B	sao 98291	sao98291	44-45,54-55	flat1-11.fits	wavecal1-11.fits
+OBS_SET	Prism	moving-ps	A-B	1143 odysseus	odysseus	36-43,46-53	flat1-11.fits	wavecal1-11.fits	A-B	sao 98291	sao98291	44-45,54-55	flat1-11.fits	wavecal1-11.fits
+
+# Lamp calibrations
+FLAT_FILE_PREFIX = flat
+ARC_FILE_PREFIX = arc
+CAL_SETS = 1-11
+
+# Notes
+# 
+# 
+# 
+# 
+# 

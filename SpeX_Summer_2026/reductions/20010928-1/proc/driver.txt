@@ -1,0 +1,53 @@
+# pyspextool batch reduction driver file for spex observations on 2001/9/28
+# Code version 2024 May 24
+
+# Observational information
+INSTRUMENT = spex
+UT_DATE = 2001/9/28
+PROGRAM = 2001B072
+OBSERVER = Kelley
+
+# Folders and files
+DATA_FOLDER = ./data
+CALS_FOLDER = .\cals
+PROC_FOLDER = .\proc
+QA_FOLDER = .\qa
+SCIENCE_FILE_PREFIX = spec
+SPECTRA_FILE_PREFIX = spectra
+COMBINED_FILE_PREFIX = combspec
+CALIBRATED_FILE_PREFIX = calspec
+STITCHED_FILE_PREFIX = stitched
+
+# Science observations
+#	Mode	Target Type	Target Sub	Target Name	Target Prefix	Target Files	Target Flat	Target Wavecal	Std Sub	Std Name	Std SpT	Std B	Std V	Std Prefix	Std Files	Std Flat	Std Wavecal	Options (key=value)
+OBS_SET	Prism	moving-ps	A-B	44 Nysa	spec	1-30	flat99-106.fits	wavecal99-106.fits	A-B	SAO164082	K0III	8.69	7.79	spec	57-68,119-130,155-166,187-198	flat99-106.fits	wavecal99-106.fits
+OBS_SET	Prism	moving-ps	A-B	170 Maria	spec	31-44	flat99-106.fits	wavecal99-106.fits	A-B	SAO143111	G5IV	8.66	7.96	spec	45-56,107-118,143-154	flat99-106.fits	wavecal99-106.fits
+OBS_SET	Prism	moving-ps	A-B	3494 Purple Mountain	spec	69-74	flat99-106.fits	wavecal99-106.fits	A-B	SAO164082	K0III	8.69	7.79	spec	57-68,119-130,155-166,187-198	flat99-106.fits	wavecal99-106.fits
+OBS_SET	Prism	fixed-ps	A-B	446 Aeternitas	spec	131-142	flat99-106.fits	wavecal99-106.fits	A-B	SAO164082	K0III	8.69	7.79	spec	57-68,119-130,155-166,187-198	flat99-106.fits	wavecal99-106.fits
+OBS_SET	Prism	moving-ps	A-B	5587 (1990 SB)	spec	167-174	flat99-106.fits	wavecal99-106.fits	A-B	SAO128553	K0III	9.715	9.297	spec	205-210,271-282,323-334,397-408	flat303-310.fits	wavecal303-310.fits
+OBS_SET	Prism	moving-ps	A-B	1025 Riema	spec	175-186	flat99-106.fits	wavecal99-106.fits	A-B	SAO128553	K0III	9.715	9.297	spec	205-210,271-282,323-334,397-408	flat303-310.fits	wavecal303-310.fits
+OBS_SET	Prism	fixed-ps	A-B	SAO128191	spec	211-222,259-270,311-322,373-396	flat303-310.fits	wavecal303-310.fits	A-B	SAO128553	K0III	9.715	9.297	spec	205-210,271-282,323-334,397-408	flat303-310.fits	wavecal303-310.fits
+OBS_SET	Prism	moving-ps	A-B	434 Hungaria	spec	223-246	flat303-310.fits	wavecal303-310.fits	A-B	SAO128553	K0III	9.715	9.297	spec	205-210,271-282,323-334,397-408	flat303-310.fits	wavecal303-310.fits
+OBS_SET	Prism	moving-ps	A-B	253 Mathilde	spec	247-258	flat303-310.fits	wavecal303-310.fits	A-B	SAO128553	K0III	9.715	9.297	spec	205-210,271-282,323-334,397-408	flat303-310.fits	wavecal303-310.fits
+OBS_SET	Prism	moving-ps	A-B	2272 Montezuma	spec	283-292	flat303-310.fits	wavecal303-310.fits	A-B	SAO128553	K0III	9.715	9.297	spec	205-210,271-282,323-334,397-408	flat303-310.fits	wavecal303-310.fits
+OBS_SET	Prism	moving-ps	A-B	442 Eischfeldia	spec	293-302	flat303-310.fits	wavecal303-310.fits	A-B	SAO128553	K0III	9.715	9.297	spec	205-210,271-282,323-334,397-408	flat303-310.fits	wavecal303-310.fits
+OBS_SET	Prism	moving-ps	A-B	1458 Mineura	spec	335-344	flat303-310.fits	wavecal303-310.fits	A-B	SAO128553	K0III	9.715	9.297	spec	205-210,271-282,323-334,397-408	flat303-310.fits	wavecal303-310.fits
+OBS_SET	Prism	moving-ps	A-B	1614 Goldschmidt	spec	345-352	flat303-310.fits	wavecal303-310.fits	A-B	SAO93012	G5	9.46	8.23	spec	361-372,423-434,451-462,501-512,541-552	flat493-500.fits	wavecal493-500.fits
+OBS_SET	Prism	moving-ps	A-B	783 Nora	spec	353-360	flat409-416.fits	wavecal409-416.fits	A-B	SAO93012	G5	9.46	8.23	spec	361-372,423-434,451-462,501-512,541-552	flat493-500.fits	wavecal493-500.fits
+OBS_SET	Prism	moving-ps	A-B	142 Polana	spec	417-422,435-440	flat409-416.fits	wavecal409-416.fits	A-B	SAO93012	G5	9.46	8.23	spec	361-372,423-434,451-462,501-512,541-552	flat493-500.fits	wavecal493-500.fits
+OBS_SET	Prism	moving-ps	A-B	2468 Repin	spec	441-450	flat409-416.fits	wavecal409-416.fits	A-B	SAO93012	G5	9.46	8.23	spec	361-372,423-434,451-462,501-512,541-552	flat493-500.fits	wavecal493-500.fits
+OBS_SET	Prism	moving-ps	A-B	620 Drakonia	spec	475-492	flat493-500.fits	wavecal493-500.fits	A-B	SAO93012	G5	9.46	8.23	spec	361-372,423-434,451-462,501-512,541-552	flat493-500.fits	wavecal493-500.fits
+OBS_SET	Prism	fixed-ps	A-B	1086 Nata	spec	525-530	flat493-500.fits	wavecal493-500.fits	A-B	SAO93936 (Hyades64)	G2+V	8.78	8.12	spec	463-474,513-524	flat493-500.fits	wavecal493-500.fits
+OBS_SET	Prism	moving-ps	A-B	135 Hertha	spec	531-540	flat565-572.fits	wavecal565-572.fits	A-B	SAO93936 Hyades64	G2+V	8.78	8.12	spec	553-564	flat565-572.fits	wavecal565-572.fits
+
+# Lamp calibrations
+FLAT_FILE_PREFIX = flat
+ARC_FILE_PREFIX = arc
+CAL_SETS = 99-106,303-310,409-416,493-500,565-572
+
+# Notes
+# 199-204 skipped for aperture overlap
+# 
+# 
+# 
+# 

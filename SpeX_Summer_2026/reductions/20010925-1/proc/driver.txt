@@ -1,0 +1,39 @@
+# pyspextool batch reduction driver file for spex observations on 2001/9/25
+# Code version 2024 May 24
+
+# Observational information
+INSTRUMENT = spex
+UT_DATE = 2001/9/25
+PROGRAM = 2001B099
+OBSERVER = Sheppard
+
+# Folders and files
+DATA_FOLDER = ./data
+CALS_FOLDER = .\cals
+PROC_FOLDER = .\proc
+QA_FOLDER = .\qa
+SCIENCE_FILE_PREFIX = nt5
+SPECTRA_FILE_PREFIX = spectra
+COMBINED_FILE_PREFIX = combspec
+CALIBRATED_FILE_PREFIX = calspec
+STITCHED_FILE_PREFIX = stitched
+
+# Science observations
+#	Mode	Target Type	Target Sub	Target Name	Target Prefix	Target Files	Target Flat	Target Wavecal	Std Sub	Std Name	Std SpT	Std B	Std V	Std Prefix	Std Files	Std Flat	Std Wavecal	Options (key=value)
+OBS_SET	Prism	moving-ps	A-B	2001 KX67	nt5	695-704,719-728	flat713-718.fits	wavecal713-718.fits	A-B	HD 210144	G8V	8.58	0.0	nt5	647-652,659-664,671-676,705-712,729-734	flat689-694.fits	wavecal689-694.fits
+OBS_SET	Prism	fixed-ps	A-B	HD 489	nt5	741-746	flat747-752.fits	wavecal747-752.fits	A-B	HD8262	G2V	7.58	0.0	nt5	765-770	flat771-776.fits	wavecal771-776.fits
+OBS_SET	Prism	moving-ps	A-B	2001 OG108	nt5	753-764,831-834	flat771-776.fits	wavecal771-776.fits	A-B	HD8262	G2V	7.58	0.0	nt5	765-770	flat771-776.fits	wavecal771-776.fits
+OBS_SET	Prism	moving-ps	A-B	1999 TS1	nt5	777-788	flat771-776.fits	wavecal771-776.fits	A-B	HD8262	G2V	7.58	0.0	nt5	765-770	flat771-776.fits	wavecal771-776.fits
+OBS_SET	Prism	moving-ps	A-B	1994 CO	nt5	801-812,825-830	flat819-824.fits	wavecal819-824.fits	A-B	HD 7438	K1(V)	8.65	7.87	nt5	813-818	flat819-824.fits	wavecal819-824.fits
+
+# Lamp calibrations
+FLAT_FILE_PREFIX = flat
+ARC_FILE_PREFIX = arc
+CAL_SETS = 629-634,641-646,653-658,665-670,677-682,689-694,713-718,735-740,747-752,771-776,795-800,819-824
+
+# Notes
+# 683-688 skipped for bad images and code cannot create spectra
+# 
+# 
+# 
+# 

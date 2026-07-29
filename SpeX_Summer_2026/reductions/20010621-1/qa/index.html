@@ -1,0 +1,4593 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="webpage for reviewing archival spectral reductions.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>pyspextool QA review for spex on 2001/6/21</title>
+  <link rel="stylesheet" type="text/css" href="qa.css">
+
+<!--  
+  <link rel="stylesheet" href="https://aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.css" />
+-->
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+<h1 id="top">pyspextool QA review for spex on 2001/6/21</h1>
+
+<h2 id="info">Observing information</h2>
+
+<ul>
+ <li>UT Date: 2001/6/21
+ <li>Program: 2001A004
+ <li>Observer(s): Binzel
+ <li>Instrument mode(s): Prism
+ <li>Data directory: <a href="./data" target="_blank">./data</a>
+ <li>Processsed files directory: <a href=".\proc" target="_blank">.\proc</a>
+ <li><a href="log.html" target="_blank">Observing Log</a>
+ <li><a href="http://mkwc.ifa.hawaii.edu/forecast/mko/archive/index.cgi" target="_blank">Mauna Kea Weather Record</a>
+</ul>
+
+<h2 id="info">Sources</h2>
+
+<!-- repeat per source -->
+
+<!-- SOURCE TEMPLATE -->
+
+<!--
+<button type="button" class="collapsible">1999 KW4 Prism</button>
+<div class="content">
+-->
+
+<h3>1999 KW4 (Prism mode)</h3>
+
+<!-- CALIBRATED SPECTRUM -->
+
+<h4>Reduced Spectrum and Source Information</h4>
+
+<table>
+ <tr>
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/calspec1022-1037.pdf" width=300 height=300></a>
+    <br>[<a href="images/calspec1022-1037.pdf" target="_blank">images/calspec1022-1037.pdf</a>]
+    <br>[<a href=".\proc\calspec1022-1037.fits" download="calspec1022-1037.fits">calspec1022-1037.fits</a>]
+  </td>
+  <td align="left">
+   <ul>
+    <li>Source Name: 1999 KW4 (moving-ps) [<a href="https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=1999KW4" target="_blank">JPL SBDB</a>]
+    <li>Coordinate: 13:14:56.26 +27:55:02 at MJD 52081.26117  
+    <li>Standard: land_ 107-684 (G2/3V) [<a href="https://simbad.u-strasbg.fr/simbad/sim-id?Ident=land_++107-684&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" target="_blank">SIMBAD</a>]
+    <li>Target Airmass: 1.023
+    <li>Standard Airmass: 1.078
+    <li>UT time: 16:04 to 51:29
+    <li>Total Integration: 1920.0 sec
+    <li>Mode: Prism
+    <li>Slit: 0.8x15
+    <li>Files: Target 1022-1037, Standard 1048-1057
+   </ul>
+  </td>
+ </tr>
+</table>
+
+
+<!-- INDIVIDUAL SOURCE SPECTRA -->
+
+<button type="button" class="collapsible">Target Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1022-1037_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1022-1037_raw.pdf" target="_blank">images/combspec1022-1037_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1022-1037_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1022-1037_scaled.pdf" target="_blank">images/combspec1022-1037_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1022-1037.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1022-1037.pdf" target="_blank">images/combspec1022-1037.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1022.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1022.pdf" target="_blank">images/spectra1022.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1023.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1023.pdf" target="_blank">images/spectra1023.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1024.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1024.pdf" target="_blank">images/spectra1024.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1025.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1025.pdf" target="_blank">images/spectra1025.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1026.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1026.pdf" target="_blank">images/spectra1026.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1027.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1027.pdf" target="_blank">images/spectra1027.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1028.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1028.pdf" target="_blank">images/spectra1028.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1029.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1029.pdf" target="_blank">images/spectra1029.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1030.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1030.pdf" target="_blank">images/spectra1030.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1031.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1031.pdf" target="_blank">images/spectra1031.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1032.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1032.pdf" target="_blank">images/spectra1032.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1033.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1033.pdf" target="_blank">images/spectra1033.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1034.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1034.pdf" target="_blank">images/spectra1034.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1035.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1035.pdf" target="_blank">images/spectra1035.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1036.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1036.pdf" target="_blank">images/spectra1036.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1037.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1037.pdf" target="_blank">images/spectra1037.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- INDIVIDUAL TELLURIC SPECTRA -->
+
+<button type="button" class="collapsible">Calibrator Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1048-1057_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1048-1057_raw.pdf" target="_blank">images/combspec1048-1057_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1048-1057_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1048-1057_scaled.pdf" target="_blank">images/combspec1048-1057_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1048-1057.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1048-1057.pdf" target="_blank">images/combspec1048-1057.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1048.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1048.pdf" target="_blank">images/spectra1048.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1049.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1049.pdf" target="_blank">images/spectra1049.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1050.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1050.pdf" target="_blank">images/spectra1050.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1051.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1051.pdf" target="_blank">images/spectra1051.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1052.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1052.pdf" target="_blank">images/spectra1052.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1053.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1053.pdf" target="_blank">images/spectra1053.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1054.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1054.pdf" target="_blank">images/spectra1054.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1055.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1055.pdf" target="_blank">images/spectra1055.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1056.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1056.pdf" target="_blank">images/spectra1056.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1057.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1057.pdf" target="_blank">images/spectra1057.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- TRACES & APERTURE PARAMETERS -->
+
+<button type="button" class="collapsible">Traces and Apertures</button>
+<div class="content">
+
+<h4>Targets</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1022.a_sp6.1023.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1022.a_sp6.1023.b_trace.pdf" target="_blank">images/sp6.1022.a_sp6.1023.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1022.a_sp6.1023.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1022.a_sp6.1023.b_apertureparms.pdf" target="_blank">images/sp6.1022.a_sp6.1023.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1025.a_sp6.1024.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1025.a_sp6.1024.b_trace.pdf" target="_blank">images/sp6.1025.a_sp6.1024.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1025.a_sp6.1024.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1025.a_sp6.1024.b_apertureparms.pdf" target="_blank">images/sp6.1025.a_sp6.1024.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1026.a_sp6.1027.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1026.a_sp6.1027.b_trace.pdf" target="_blank">images/sp6.1026.a_sp6.1027.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1026.a_sp6.1027.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1026.a_sp6.1027.b_apertureparms.pdf" target="_blank">images/sp6.1026.a_sp6.1027.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1029.a_sp6.1028.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1029.a_sp6.1028.b_trace.pdf" target="_blank">images/sp6.1029.a_sp6.1028.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1029.a_sp6.1028.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1029.a_sp6.1028.b_apertureparms.pdf" target="_blank">images/sp6.1029.a_sp6.1028.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1030.a_sp6.1031.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1030.a_sp6.1031.b_trace.pdf" target="_blank">images/sp6.1030.a_sp6.1031.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1030.a_sp6.1031.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1030.a_sp6.1031.b_apertureparms.pdf" target="_blank">images/sp6.1030.a_sp6.1031.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1032.a_sp6.1033.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1032.a_sp6.1033.b_trace.pdf" target="_blank">images/sp6.1032.a_sp6.1033.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1032.a_sp6.1033.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1032.a_sp6.1033.b_apertureparms.pdf" target="_blank">images/sp6.1032.a_sp6.1033.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1035.a_sp6.1034.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1035.a_sp6.1034.b_trace.pdf" target="_blank">images/sp6.1035.a_sp6.1034.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1035.a_sp6.1034.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1035.a_sp6.1034.b_apertureparms.pdf" target="_blank">images/sp6.1035.a_sp6.1034.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1036.a_sp6.1037.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1036.a_sp6.1037.b_trace.pdf" target="_blank">images/sp6.1036.a_sp6.1037.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1036.a_sp6.1037.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1036.a_sp6.1037.b_apertureparms.pdf" target="_blank">images/sp6.1036.a_sp6.1037.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Calibrators</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1048.a_sp6.1049.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1048.a_sp6.1049.b_trace.pdf" target="_blank">images/sp6.1048.a_sp6.1049.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1048.a_sp6.1049.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1048.a_sp6.1049.b_apertureparms.pdf" target="_blank">images/sp6.1048.a_sp6.1049.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1051.a_sp6.1050.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1051.a_sp6.1050.b_trace.pdf" target="_blank">images/sp6.1051.a_sp6.1050.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1051.a_sp6.1050.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1051.a_sp6.1050.b_apertureparms.pdf" target="_blank">images/sp6.1051.a_sp6.1050.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1052.a_sp6.1053.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1052.a_sp6.1053.b_trace.pdf" target="_blank">images/sp6.1052.a_sp6.1053.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1052.a_sp6.1053.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1052.a_sp6.1053.b_apertureparms.pdf" target="_blank">images/sp6.1052.a_sp6.1053.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1055.a_sp6.1054.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1055.a_sp6.1054.b_trace.pdf" target="_blank">images/sp6.1055.a_sp6.1054.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1055.a_sp6.1054.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1055.a_sp6.1054.b_apertureparms.pdf" target="_blank">images/sp6.1055.a_sp6.1054.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1056.a_sp6.1057.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1056.a_sp6.1057.b_trace.pdf" target="_blank">images/sp6.1056.a_sp6.1057.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1056.a_sp6.1057.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1056.a_sp6.1057.b_apertureparms.pdf" target="_blank">images/sp6.1056.a_sp6.1057.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+<!--
+</div>
+-->
+<hr>
+
+<!-- SOURCE TEMPLATE -->
+
+<!--
+<button type="button" class="collapsible">532 Prism</button>
+<div class="content">
+-->
+
+<h3>532 (Prism mode)</h3>
+
+<!-- CALIBRATED SPECTRUM -->
+
+<h4>Reduced Spectrum and Source Information</h4>
+
+<table>
+ <tr>
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/calspec1038-1047.pdf" width=300 height=300></a>
+    <br>[<a href="images/calspec1038-1047.pdf" target="_blank">images/calspec1038-1047.pdf</a>]
+    <br>[<a href=".\proc\calspec1038-1047.fits" download="calspec1038-1047.fits">calspec1038-1047.fits</a>]
+  </td>
+  <td align="left">
+   <ul>
+    <li>Source Name: 532 (moving-ps) [<a href="https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=532" target="_blank">JPL SBDB</a>]
+    <li>Coordinate: 14:06:46.44 +07:20:06.1 at MJD 52081.29308  
+    <li>Standard: land_ 107-684 (G2/3V) [<a href="https://simbad.u-strasbg.fr/simbad/sim-id?Ident=land_++107-684&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" target="_blank">SIMBAD</a>]
+    <li>Target Airmass: 1.034
+    <li>Standard Airmass: 1.078
+    <li>UT time: 02:02 to 17:01
+    <li>Total Integration: 50.0 sec
+    <li>Mode: Prism
+    <li>Slit: 0.8x15
+    <li>Files: Target 1038-1047, Standard 1048-1057
+   </ul>
+  </td>
+ </tr>
+</table>
+
+
+<!-- INDIVIDUAL SOURCE SPECTRA -->
+
+<button type="button" class="collapsible">Target Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1038-1047_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1038-1047_raw.pdf" target="_blank">images/combspec1038-1047_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1038-1047_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1038-1047_scaled.pdf" target="_blank">images/combspec1038-1047_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1038-1047.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1038-1047.pdf" target="_blank">images/combspec1038-1047.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1038.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1038.pdf" target="_blank">images/spectra1038.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1039.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1039.pdf" target="_blank">images/spectra1039.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1040.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1040.pdf" target="_blank">images/spectra1040.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1041.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1041.pdf" target="_blank">images/spectra1041.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1042.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1042.pdf" target="_blank">images/spectra1042.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1043.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1043.pdf" target="_blank">images/spectra1043.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1044.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1044.pdf" target="_blank">images/spectra1044.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1045.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1045.pdf" target="_blank">images/spectra1045.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1046.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1046.pdf" target="_blank">images/spectra1046.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1047.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1047.pdf" target="_blank">images/spectra1047.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- INDIVIDUAL TELLURIC SPECTRA -->
+
+<button type="button" class="collapsible">Calibrator Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1048-1057_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1048-1057_raw.pdf" target="_blank">images/combspec1048-1057_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1048-1057_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1048-1057_scaled.pdf" target="_blank">images/combspec1048-1057_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1048-1057.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1048-1057.pdf" target="_blank">images/combspec1048-1057.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1048.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1048.pdf" target="_blank">images/spectra1048.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1049.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1049.pdf" target="_blank">images/spectra1049.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1050.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1050.pdf" target="_blank">images/spectra1050.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1051.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1051.pdf" target="_blank">images/spectra1051.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1052.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1052.pdf" target="_blank">images/spectra1052.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1053.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1053.pdf" target="_blank">images/spectra1053.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1054.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1054.pdf" target="_blank">images/spectra1054.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1055.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1055.pdf" target="_blank">images/spectra1055.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1056.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1056.pdf" target="_blank">images/spectra1056.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1057.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1057.pdf" target="_blank">images/spectra1057.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- TRACES & APERTURE PARAMETERS -->
+
+<button type="button" class="collapsible">Traces and Apertures</button>
+<div class="content">
+
+<h4>Targets</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1038.a_sp6.1039.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1038.a_sp6.1039.b_trace.pdf" target="_blank">images/sp6.1038.a_sp6.1039.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1038.a_sp6.1039.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1038.a_sp6.1039.b_apertureparms.pdf" target="_blank">images/sp6.1038.a_sp6.1039.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1041.a_sp6.1040.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1041.a_sp6.1040.b_trace.pdf" target="_blank">images/sp6.1041.a_sp6.1040.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1041.a_sp6.1040.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1041.a_sp6.1040.b_apertureparms.pdf" target="_blank">images/sp6.1041.a_sp6.1040.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1042.a_sp6.1043.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1042.a_sp6.1043.b_trace.pdf" target="_blank">images/sp6.1042.a_sp6.1043.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1042.a_sp6.1043.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1042.a_sp6.1043.b_apertureparms.pdf" target="_blank">images/sp6.1042.a_sp6.1043.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1045.a_sp6.1044.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1045.a_sp6.1044.b_trace.pdf" target="_blank">images/sp6.1045.a_sp6.1044.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1045.a_sp6.1044.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1045.a_sp6.1044.b_apertureparms.pdf" target="_blank">images/sp6.1045.a_sp6.1044.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1046.a_sp6.1047.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1046.a_sp6.1047.b_trace.pdf" target="_blank">images/sp6.1046.a_sp6.1047.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1046.a_sp6.1047.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1046.a_sp6.1047.b_apertureparms.pdf" target="_blank">images/sp6.1046.a_sp6.1047.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Calibrators</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1048.a_sp6.1049.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1048.a_sp6.1049.b_trace.pdf" target="_blank">images/sp6.1048.a_sp6.1049.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1048.a_sp6.1049.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1048.a_sp6.1049.b_apertureparms.pdf" target="_blank">images/sp6.1048.a_sp6.1049.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1051.a_sp6.1050.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1051.a_sp6.1050.b_trace.pdf" target="_blank">images/sp6.1051.a_sp6.1050.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1051.a_sp6.1050.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1051.a_sp6.1050.b_apertureparms.pdf" target="_blank">images/sp6.1051.a_sp6.1050.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1052.a_sp6.1053.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1052.a_sp6.1053.b_trace.pdf" target="_blank">images/sp6.1052.a_sp6.1053.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1052.a_sp6.1053.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1052.a_sp6.1053.b_apertureparms.pdf" target="_blank">images/sp6.1052.a_sp6.1053.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1055.a_sp6.1054.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1055.a_sp6.1054.b_trace.pdf" target="_blank">images/sp6.1055.a_sp6.1054.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1055.a_sp6.1054.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1055.a_sp6.1054.b_apertureparms.pdf" target="_blank">images/sp6.1055.a_sp6.1054.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1056.a_sp6.1057.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1056.a_sp6.1057.b_trace.pdf" target="_blank">images/sp6.1056.a_sp6.1057.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1056.a_sp6.1057.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1056.a_sp6.1057.b_apertureparms.pdf" target="_blank">images/sp6.1056.a_sp6.1057.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+<!--
+</div>
+-->
+<hr>
+
+<!-- SOURCE TEMPLATE -->
+
+<!--
+<button type="button" class="collapsible">673 Prism</button>
+<div class="content">
+-->
+
+<h3>673 (Prism mode)</h3>
+
+<!-- CALIBRATED SPECTRUM -->
+
+<h4>Reduced Spectrum and Source Information</h4>
+
+<table>
+ <tr>
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/calspec1058-1071.pdf" width=300 height=300></a>
+    <br>[<a href="images/calspec1058-1071.pdf" target="_blank">images/calspec1058-1071.pdf</a>]
+    <br>[<a href=".\proc\calspec1058-1071.fits" download="calspec1058-1071.fits">calspec1058-1071.fits</a>]
+  </td>
+  <td align="left">
+   <ul>
+    <li>Source Name: 673 (fixed-ps) 
+    <li>Coordinate: 14:07:35.03 -12:35:37.5 [<a href="https://aladin.cds.unistra.fr/AladinLite/?target=J14073503-1235375&fov=0.12&survey=CDS%2FP%2F2MASS%2Fcolor" target="_blank">Aladin</a>] [<a href="https://simbad.cds.unistra.fr/simbad/sim-coo?Coord=J14073503-1235375&CooFrame=FK5&CooEpoch=2000&CooEqui=2000&CooDefinedFrames=none&Radius=2&Radius.unit=arcmin&submit=submit+query&CoordList=" target="_blank">SIMBAD</a>]
+    <li>Standard: land_ 107-684 (G2/3V) [<a href="https://simbad.u-strasbg.fr/simbad/sim-id?Ident=land_++107-684&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" target="_blank">SIMBAD</a>]
+    <li>Target Airmass: 1.249
+    <li>Standard Airmass: 1.078
+    <li>UT time: 39:47 to 10:25
+    <li>Total Integration: 1680.0 sec
+    <li>Mode: Prism
+    <li>Slit: 0.8x15
+    <li>Files: Target 1058-1071, Standard 1048-1057
+   </ul>
+  </td>
+ </tr>
+</table>
+
+
+<!-- INDIVIDUAL SOURCE SPECTRA -->
+
+<button type="button" class="collapsible">Target Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1058-1071_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1058-1071_raw.pdf" target="_blank">images/combspec1058-1071_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1058-1071_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1058-1071_scaled.pdf" target="_blank">images/combspec1058-1071_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1058-1071.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1058-1071.pdf" target="_blank">images/combspec1058-1071.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1058.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1058.pdf" target="_blank">images/spectra1058.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1059.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1059.pdf" target="_blank">images/spectra1059.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1060.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1060.pdf" target="_blank">images/spectra1060.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1061.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1061.pdf" target="_blank">images/spectra1061.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1062.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1062.pdf" target="_blank">images/spectra1062.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1063.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1063.pdf" target="_blank">images/spectra1063.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1064.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1064.pdf" target="_blank">images/spectra1064.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1065.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1065.pdf" target="_blank">images/spectra1065.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1066.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1066.pdf" target="_blank">images/spectra1066.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1067.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1067.pdf" target="_blank">images/spectra1067.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1068.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1068.pdf" target="_blank">images/spectra1068.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1069.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1069.pdf" target="_blank">images/spectra1069.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1070.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1070.pdf" target="_blank">images/spectra1070.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1071.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1071.pdf" target="_blank">images/spectra1071.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- INDIVIDUAL TELLURIC SPECTRA -->
+
+<button type="button" class="collapsible">Calibrator Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1048-1057_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1048-1057_raw.pdf" target="_blank">images/combspec1048-1057_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1048-1057_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1048-1057_scaled.pdf" target="_blank">images/combspec1048-1057_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1048-1057.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1048-1057.pdf" target="_blank">images/combspec1048-1057.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1048.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1048.pdf" target="_blank">images/spectra1048.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1049.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1049.pdf" target="_blank">images/spectra1049.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1050.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1050.pdf" target="_blank">images/spectra1050.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1051.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1051.pdf" target="_blank">images/spectra1051.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1052.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1052.pdf" target="_blank">images/spectra1052.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1053.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1053.pdf" target="_blank">images/spectra1053.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1054.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1054.pdf" target="_blank">images/spectra1054.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1055.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1055.pdf" target="_blank">images/spectra1055.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1056.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1056.pdf" target="_blank">images/spectra1056.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1057.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1057.pdf" target="_blank">images/spectra1057.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- TRACES & APERTURE PARAMETERS -->
+
+<button type="button" class="collapsible">Traces and Apertures</button>
+<div class="content">
+
+<h4>Targets</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1058.a_sp6.1059.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1058.a_sp6.1059.b_trace.pdf" target="_blank">images/sp6.1058.a_sp6.1059.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1058.a_sp6.1059.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1058.a_sp6.1059.b_apertureparms.pdf" target="_blank">images/sp6.1058.a_sp6.1059.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1061.a_sp6.1060.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1061.a_sp6.1060.b_trace.pdf" target="_blank">images/sp6.1061.a_sp6.1060.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1061.a_sp6.1060.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1061.a_sp6.1060.b_apertureparms.pdf" target="_blank">images/sp6.1061.a_sp6.1060.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1062.a_sp6.1063.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1062.a_sp6.1063.b_trace.pdf" target="_blank">images/sp6.1062.a_sp6.1063.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1062.a_sp6.1063.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1062.a_sp6.1063.b_apertureparms.pdf" target="_blank">images/sp6.1062.a_sp6.1063.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1065.a_sp6.1064.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1065.a_sp6.1064.b_trace.pdf" target="_blank">images/sp6.1065.a_sp6.1064.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1065.a_sp6.1064.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1065.a_sp6.1064.b_apertureparms.pdf" target="_blank">images/sp6.1065.a_sp6.1064.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1066.a_sp6.1067.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1066.a_sp6.1067.b_trace.pdf" target="_blank">images/sp6.1066.a_sp6.1067.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1066.a_sp6.1067.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1066.a_sp6.1067.b_apertureparms.pdf" target="_blank">images/sp6.1066.a_sp6.1067.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1068.a_sp6.1069.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1068.a_sp6.1069.b_trace.pdf" target="_blank">images/sp6.1068.a_sp6.1069.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1068.a_sp6.1069.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1068.a_sp6.1069.b_apertureparms.pdf" target="_blank">images/sp6.1068.a_sp6.1069.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1071.a_sp6.1070.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1071.a_sp6.1070.b_trace.pdf" target="_blank">images/sp6.1071.a_sp6.1070.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1071.a_sp6.1070.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1071.a_sp6.1070.b_apertureparms.pdf" target="_blank">images/sp6.1071.a_sp6.1070.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Calibrators</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1048.a_sp6.1049.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1048.a_sp6.1049.b_trace.pdf" target="_blank">images/sp6.1048.a_sp6.1049.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1048.a_sp6.1049.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1048.a_sp6.1049.b_apertureparms.pdf" target="_blank">images/sp6.1048.a_sp6.1049.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1051.a_sp6.1050.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1051.a_sp6.1050.b_trace.pdf" target="_blank">images/sp6.1051.a_sp6.1050.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1051.a_sp6.1050.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1051.a_sp6.1050.b_apertureparms.pdf" target="_blank">images/sp6.1051.a_sp6.1050.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1052.a_sp6.1053.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1052.a_sp6.1053.b_trace.pdf" target="_blank">images/sp6.1052.a_sp6.1053.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1052.a_sp6.1053.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1052.a_sp6.1053.b_apertureparms.pdf" target="_blank">images/sp6.1052.a_sp6.1053.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1055.a_sp6.1054.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1055.a_sp6.1054.b_trace.pdf" target="_blank">images/sp6.1055.a_sp6.1054.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1055.a_sp6.1054.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1055.a_sp6.1054.b_apertureparms.pdf" target="_blank">images/sp6.1055.a_sp6.1054.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1056.a_sp6.1057.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1056.a_sp6.1057.b_trace.pdf" target="_blank">images/sp6.1056.a_sp6.1057.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1056.a_sp6.1057.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1056.a_sp6.1057.b_apertureparms.pdf" target="_blank">images/sp6.1056.a_sp6.1057.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+<!--
+</div>
+-->
+<hr>
+
+<!-- SOURCE TEMPLATE -->
+
+<!--
+<button type="button" class="collapsible">119 Prism</button>
+<div class="content">
+-->
+
+<h3>119 (Prism mode)</h3>
+
+<!-- CALIBRATED SPECTRUM -->
+
+<h4>Reduced Spectrum and Source Information</h4>
+
+<table>
+ <tr>
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/calspec1072-1081.pdf" width=300 height=300></a>
+    <br>[<a href="images/calspec1072-1081.pdf" target="_blank">images/calspec1072-1081.pdf</a>]
+    <br>[<a href=".\proc\calspec1072-1081.fits" download="calspec1072-1081.fits">calspec1072-1081.fits</a>]
+  </td>
+  <td align="left">
+   <ul>
+    <li>Source Name: 119 (moving-ps) [<a href="https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=119" target="_blank">JPL SBDB</a>]
+    <li>Coordinate: 15:46:52.62 -13:32:02.3 at MJD 52081.34587  
+    <li>Standard: land_ 107-684 (G2/3V) [<a href="https://simbad.u-strasbg.fr/simbad/sim-id?Ident=land_++107-684&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" target="_blank">SIMBAD</a>]
+    <li>Target Airmass: 1.199
+    <li>Standard Airmass: 1.078
+    <li>UT time: 18:02 to 39:29
+    <li>Total Integration: 300.0 sec
+    <li>Mode: Prism
+    <li>Slit: 0.8x15
+    <li>Files: Target 1072-1081, Standard 1048-1057
+   </ul>
+  </td>
+ </tr>
+</table>
+
+
+<!-- INDIVIDUAL SOURCE SPECTRA -->
+
+<button type="button" class="collapsible">Target Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1072-1081_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1072-1081_raw.pdf" target="_blank">images/combspec1072-1081_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1072-1081_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1072-1081_scaled.pdf" target="_blank">images/combspec1072-1081_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1072-1081.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1072-1081.pdf" target="_blank">images/combspec1072-1081.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1072.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1072.pdf" target="_blank">images/spectra1072.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1073.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1073.pdf" target="_blank">images/spectra1073.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1074.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1074.pdf" target="_blank">images/spectra1074.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1075.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1075.pdf" target="_blank">images/spectra1075.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1076.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1076.pdf" target="_blank">images/spectra1076.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1077.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1077.pdf" target="_blank">images/spectra1077.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1078.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1078.pdf" target="_blank">images/spectra1078.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1079.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1079.pdf" target="_blank">images/spectra1079.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1080.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1080.pdf" target="_blank">images/spectra1080.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1081.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1081.pdf" target="_blank">images/spectra1081.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- INDIVIDUAL TELLURIC SPECTRA -->
+
+<button type="button" class="collapsible">Calibrator Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1048-1057_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1048-1057_raw.pdf" target="_blank">images/combspec1048-1057_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1048-1057_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1048-1057_scaled.pdf" target="_blank">images/combspec1048-1057_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1048-1057.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1048-1057.pdf" target="_blank">images/combspec1048-1057.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1048.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1048.pdf" target="_blank">images/spectra1048.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1049.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1049.pdf" target="_blank">images/spectra1049.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1050.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1050.pdf" target="_blank">images/spectra1050.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1051.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1051.pdf" target="_blank">images/spectra1051.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1052.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1052.pdf" target="_blank">images/spectra1052.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1053.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1053.pdf" target="_blank">images/spectra1053.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1054.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1054.pdf" target="_blank">images/spectra1054.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1055.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1055.pdf" target="_blank">images/spectra1055.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1056.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1056.pdf" target="_blank">images/spectra1056.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1057.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1057.pdf" target="_blank">images/spectra1057.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- TRACES & APERTURE PARAMETERS -->
+
+<button type="button" class="collapsible">Traces and Apertures</button>
+<div class="content">
+
+<h4>Targets</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1072.a_sp6.1073.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1072.a_sp6.1073.b_trace.pdf" target="_blank">images/sp6.1072.a_sp6.1073.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1072.a_sp6.1073.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1072.a_sp6.1073.b_apertureparms.pdf" target="_blank">images/sp6.1072.a_sp6.1073.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1075.a_sp6.1074.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1075.a_sp6.1074.b_trace.pdf" target="_blank">images/sp6.1075.a_sp6.1074.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1075.a_sp6.1074.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1075.a_sp6.1074.b_apertureparms.pdf" target="_blank">images/sp6.1075.a_sp6.1074.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1076.a_sp6.1077.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1076.a_sp6.1077.b_trace.pdf" target="_blank">images/sp6.1076.a_sp6.1077.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1076.a_sp6.1077.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1076.a_sp6.1077.b_apertureparms.pdf" target="_blank">images/sp6.1076.a_sp6.1077.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1079.a_sp6.1078.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1079.a_sp6.1078.b_trace.pdf" target="_blank">images/sp6.1079.a_sp6.1078.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1079.a_sp6.1078.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1079.a_sp6.1078.b_apertureparms.pdf" target="_blank">images/sp6.1079.a_sp6.1078.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1080.a_sp6.1081.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1080.a_sp6.1081.b_trace.pdf" target="_blank">images/sp6.1080.a_sp6.1081.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1080.a_sp6.1081.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1080.a_sp6.1081.b_apertureparms.pdf" target="_blank">images/sp6.1080.a_sp6.1081.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Calibrators</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1048.a_sp6.1049.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1048.a_sp6.1049.b_trace.pdf" target="_blank">images/sp6.1048.a_sp6.1049.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1048.a_sp6.1049.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1048.a_sp6.1049.b_apertureparms.pdf" target="_blank">images/sp6.1048.a_sp6.1049.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1051.a_sp6.1050.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1051.a_sp6.1050.b_trace.pdf" target="_blank">images/sp6.1051.a_sp6.1050.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1051.a_sp6.1050.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1051.a_sp6.1050.b_apertureparms.pdf" target="_blank">images/sp6.1051.a_sp6.1050.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1052.a_sp6.1053.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1052.a_sp6.1053.b_trace.pdf" target="_blank">images/sp6.1052.a_sp6.1053.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1052.a_sp6.1053.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1052.a_sp6.1053.b_apertureparms.pdf" target="_blank">images/sp6.1052.a_sp6.1053.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1055.a_sp6.1054.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1055.a_sp6.1054.b_trace.pdf" target="_blank">images/sp6.1055.a_sp6.1054.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1055.a_sp6.1054.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1055.a_sp6.1054.b_apertureparms.pdf" target="_blank">images/sp6.1055.a_sp6.1054.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1056.a_sp6.1057.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1056.a_sp6.1057.b_trace.pdf" target="_blank">images/sp6.1056.a_sp6.1057.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1056.a_sp6.1057.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1056.a_sp6.1057.b_apertureparms.pdf" target="_blank">images/sp6.1056.a_sp6.1057.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+<!--
+</div>
+-->
+<hr>
+
+<!-- SOURCE TEMPLATE -->
+
+<!--
+<button type="button" class="collapsible">2001 KA67 Prism</button>
+<div class="content">
+-->
+
+<h3>2001 KA67 (Prism mode)</h3>
+
+<!-- CALIBRATED SPECTRUM -->
+
+<h4>Reduced Spectrum and Source Information</h4>
+
+<table>
+ <tr>
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/calspec1082-1097.pdf" width=300 height=300></a>
+    <br>[<a href="images/calspec1082-1097.pdf" target="_blank">images/calspec1082-1097.pdf</a>]
+    <br>[<a href=".\proc\calspec1082-1097.fits" download="calspec1082-1097.fits">calspec1082-1097.fits</a>]
+  </td>
+  <td align="left">
+   <ul>
+    <li>Source Name: 2001 KA67 (moving-ps) [<a href="https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=2001KA67" target="_blank">JPL SBDB</a>]
+    <li>Coordinate: 16:34:02.99 +14:23:44.5 at MJD 52081.36943  
+    <li>Standard: land_ 107-684 (G2/3V) [<a href="https://simbad.u-strasbg.fr/simbad/sim-id?Ident=land_++107-684&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" target="_blank">SIMBAD</a>]
+    <li>Target Airmass: 1.005
+    <li>Standard Airmass: 1.078
+    <li>UT time: 51:58 to 27:16
+    <li>Total Integration: 1920.0 sec
+    <li>Mode: Prism
+    <li>Slit: 0.8x15
+    <li>Files: Target 1082-1097, Standard 1048-1057
+   </ul>
+  </td>
+ </tr>
+</table>
+
+
+<!-- INDIVIDUAL SOURCE SPECTRA -->
+
+<button type="button" class="collapsible">Target Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1082-1097_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1082-1097_raw.pdf" target="_blank">images/combspec1082-1097_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1082-1097_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1082-1097_scaled.pdf" target="_blank">images/combspec1082-1097_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1082-1097.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1082-1097.pdf" target="_blank">images/combspec1082-1097.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1082.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1082.pdf" target="_blank">images/spectra1082.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1083.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1083.pdf" target="_blank">images/spectra1083.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1084.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1084.pdf" target="_blank">images/spectra1084.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1085.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1085.pdf" target="_blank">images/spectra1085.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1086.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1086.pdf" target="_blank">images/spectra1086.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1087.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1087.pdf" target="_blank">images/spectra1087.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1088.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1088.pdf" target="_blank">images/spectra1088.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1089.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1089.pdf" target="_blank">images/spectra1089.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1090.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1090.pdf" target="_blank">images/spectra1090.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1091.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1091.pdf" target="_blank">images/spectra1091.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1092.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1092.pdf" target="_blank">images/spectra1092.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1093.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1093.pdf" target="_blank">images/spectra1093.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1094.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1094.pdf" target="_blank">images/spectra1094.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1095.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1095.pdf" target="_blank">images/spectra1095.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1096.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1096.pdf" target="_blank">images/spectra1096.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1097.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1097.pdf" target="_blank">images/spectra1097.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- INDIVIDUAL TELLURIC SPECTRA -->
+
+<button type="button" class="collapsible">Calibrator Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1048-1057_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1048-1057_raw.pdf" target="_blank">images/combspec1048-1057_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1048-1057_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1048-1057_scaled.pdf" target="_blank">images/combspec1048-1057_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1048-1057.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1048-1057.pdf" target="_blank">images/combspec1048-1057.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1048.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1048.pdf" target="_blank">images/spectra1048.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1049.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1049.pdf" target="_blank">images/spectra1049.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1050.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1050.pdf" target="_blank">images/spectra1050.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1051.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1051.pdf" target="_blank">images/spectra1051.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1052.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1052.pdf" target="_blank">images/spectra1052.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1053.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1053.pdf" target="_blank">images/spectra1053.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1054.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1054.pdf" target="_blank">images/spectra1054.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1055.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1055.pdf" target="_blank">images/spectra1055.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1056.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1056.pdf" target="_blank">images/spectra1056.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1057.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1057.pdf" target="_blank">images/spectra1057.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- TRACES & APERTURE PARAMETERS -->
+
+<button type="button" class="collapsible">Traces and Apertures</button>
+<div class="content">
+
+<h4>Targets</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1082.a_sp6.1083.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1082.a_sp6.1083.b_trace.pdf" target="_blank">images/sp6.1082.a_sp6.1083.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1082.a_sp6.1083.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1082.a_sp6.1083.b_apertureparms.pdf" target="_blank">images/sp6.1082.a_sp6.1083.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1085.a_sp6.1084.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1085.a_sp6.1084.b_trace.pdf" target="_blank">images/sp6.1085.a_sp6.1084.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1085.a_sp6.1084.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1085.a_sp6.1084.b_apertureparms.pdf" target="_blank">images/sp6.1085.a_sp6.1084.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1086.a_sp6.1087.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1086.a_sp6.1087.b_trace.pdf" target="_blank">images/sp6.1086.a_sp6.1087.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1086.a_sp6.1087.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1086.a_sp6.1087.b_apertureparms.pdf" target="_blank">images/sp6.1086.a_sp6.1087.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1089.a_sp6.1088.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1089.a_sp6.1088.b_trace.pdf" target="_blank">images/sp6.1089.a_sp6.1088.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1089.a_sp6.1088.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1089.a_sp6.1088.b_apertureparms.pdf" target="_blank">images/sp6.1089.a_sp6.1088.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1090.a_sp6.1091.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1090.a_sp6.1091.b_trace.pdf" target="_blank">images/sp6.1090.a_sp6.1091.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1090.a_sp6.1091.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1090.a_sp6.1091.b_apertureparms.pdf" target="_blank">images/sp6.1090.a_sp6.1091.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1092.a_sp6.1093.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1092.a_sp6.1093.b_trace.pdf" target="_blank">images/sp6.1092.a_sp6.1093.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1092.a_sp6.1093.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1092.a_sp6.1093.b_apertureparms.pdf" target="_blank">images/sp6.1092.a_sp6.1093.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1095.a_sp6.1094.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1095.a_sp6.1094.b_trace.pdf" target="_blank">images/sp6.1095.a_sp6.1094.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1095.a_sp6.1094.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1095.a_sp6.1094.b_apertureparms.pdf" target="_blank">images/sp6.1095.a_sp6.1094.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1096.a_sp6.1097.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1096.a_sp6.1097.b_trace.pdf" target="_blank">images/sp6.1096.a_sp6.1097.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1096.a_sp6.1097.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1096.a_sp6.1097.b_apertureparms.pdf" target="_blank">images/sp6.1096.a_sp6.1097.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Calibrators</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1048.a_sp6.1049.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1048.a_sp6.1049.b_trace.pdf" target="_blank">images/sp6.1048.a_sp6.1049.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1048.a_sp6.1049.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1048.a_sp6.1049.b_apertureparms.pdf" target="_blank">images/sp6.1048.a_sp6.1049.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1051.a_sp6.1050.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1051.a_sp6.1050.b_trace.pdf" target="_blank">images/sp6.1051.a_sp6.1050.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1051.a_sp6.1050.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1051.a_sp6.1050.b_apertureparms.pdf" target="_blank">images/sp6.1051.a_sp6.1050.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1052.a_sp6.1053.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1052.a_sp6.1053.b_trace.pdf" target="_blank">images/sp6.1052.a_sp6.1053.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1052.a_sp6.1053.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1052.a_sp6.1053.b_apertureparms.pdf" target="_blank">images/sp6.1052.a_sp6.1053.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1055.a_sp6.1054.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1055.a_sp6.1054.b_trace.pdf" target="_blank">images/sp6.1055.a_sp6.1054.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1055.a_sp6.1054.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1055.a_sp6.1054.b_apertureparms.pdf" target="_blank">images/sp6.1055.a_sp6.1054.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1056.a_sp6.1057.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1056.a_sp6.1057.b_trace.pdf" target="_blank">images/sp6.1056.a_sp6.1057.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1056.a_sp6.1057.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1056.a_sp6.1057.b_apertureparms.pdf" target="_blank">images/sp6.1056.a_sp6.1057.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+<!--
+</div>
+-->
+<hr>
+
+<!-- SOURCE TEMPLATE -->
+
+<!--
+<button type="button" class="collapsible">42 Prism</button>
+<div class="content">
+-->
+
+<h3>42 (Prism mode)</h3>
+
+<!-- CALIBRATED SPECTRUM -->
+
+<h4>Reduced Spectrum and Source Information</h4>
+
+<table>
+ <tr>
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/calspec1098-1107.pdf" width=300 height=300></a>
+    <br>[<a href="images/calspec1098-1107.pdf" target="_blank">images/calspec1098-1107.pdf</a>]
+    <br>[<a href=".\proc\calspec1098-1107.fits" download="calspec1098-1107.fits">calspec1098-1107.fits</a>]
+  </td>
+  <td align="left">
+   <ul>
+    <li>Source Name: 42 (moving-ps) [<a href="https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=42" target="_blank">JPL SBDB</a>]
+    <li>Coordinate: 16:49:26.66 -21:35:18.9 at MJD 52081.402  
+    <li>Standard: land_ 107-684 (G2/3V) [<a href="https://simbad.u-strasbg.fr/simbad/sim-id?Ident=land_++107-684&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" target="_blank">SIMBAD</a>]
+    <li>Target Airmass: 1.345
+    <li>Standard Airmass: 1.078
+    <li>UT time: 38:52 to 53:53
+    <li>Total Integration: 50.0 sec
+    <li>Mode: Prism
+    <li>Slit: 0.8x15
+    <li>Files: Target 1098-1107, Standard 1048-1057
+   </ul>
+  </td>
+ </tr>
+</table>
+
+
+<!-- INDIVIDUAL SOURCE SPECTRA -->
+
+<button type="button" class="collapsible">Target Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1098-1107_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1098-1107_raw.pdf" target="_blank">images/combspec1098-1107_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1098-1107_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1098-1107_scaled.pdf" target="_blank">images/combspec1098-1107_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1098-1107.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1098-1107.pdf" target="_blank">images/combspec1098-1107.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1098.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1098.pdf" target="_blank">images/spectra1098.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1099.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1099.pdf" target="_blank">images/spectra1099.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1100.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1100.pdf" target="_blank">images/spectra1100.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1101.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1101.pdf" target="_blank">images/spectra1101.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1102.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1102.pdf" target="_blank">images/spectra1102.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1103.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1103.pdf" target="_blank">images/spectra1103.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1104.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1104.pdf" target="_blank">images/spectra1104.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1105.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1105.pdf" target="_blank">images/spectra1105.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1106.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1106.pdf" target="_blank">images/spectra1106.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1107.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1107.pdf" target="_blank">images/spectra1107.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- INDIVIDUAL TELLURIC SPECTRA -->
+
+<button type="button" class="collapsible">Calibrator Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1048-1057_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1048-1057_raw.pdf" target="_blank">images/combspec1048-1057_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1048-1057_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1048-1057_scaled.pdf" target="_blank">images/combspec1048-1057_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1048-1057.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1048-1057.pdf" target="_blank">images/combspec1048-1057.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1048.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1048.pdf" target="_blank">images/spectra1048.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1049.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1049.pdf" target="_blank">images/spectra1049.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1050.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1050.pdf" target="_blank">images/spectra1050.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1051.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1051.pdf" target="_blank">images/spectra1051.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1052.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1052.pdf" target="_blank">images/spectra1052.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1053.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1053.pdf" target="_blank">images/spectra1053.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1054.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1054.pdf" target="_blank">images/spectra1054.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1055.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1055.pdf" target="_blank">images/spectra1055.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1056.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1056.pdf" target="_blank">images/spectra1056.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1057.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1057.pdf" target="_blank">images/spectra1057.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- TRACES & APERTURE PARAMETERS -->
+
+<button type="button" class="collapsible">Traces and Apertures</button>
+<div class="content">
+
+<h4>Targets</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1098.a_sp6.1099.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1098.a_sp6.1099.b_trace.pdf" target="_blank">images/sp6.1098.a_sp6.1099.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1098.a_sp6.1099.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1098.a_sp6.1099.b_apertureparms.pdf" target="_blank">images/sp6.1098.a_sp6.1099.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1101.a_sp6.1100.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1101.a_sp6.1100.b_trace.pdf" target="_blank">images/sp6.1101.a_sp6.1100.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1101.a_sp6.1100.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1101.a_sp6.1100.b_apertureparms.pdf" target="_blank">images/sp6.1101.a_sp6.1100.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1102.a_sp6.1103.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1102.a_sp6.1103.b_trace.pdf" target="_blank">images/sp6.1102.a_sp6.1103.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1102.a_sp6.1103.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1102.a_sp6.1103.b_apertureparms.pdf" target="_blank">images/sp6.1102.a_sp6.1103.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1105.a_sp6.1104.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1105.a_sp6.1104.b_trace.pdf" target="_blank">images/sp6.1105.a_sp6.1104.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1105.a_sp6.1104.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1105.a_sp6.1104.b_apertureparms.pdf" target="_blank">images/sp6.1105.a_sp6.1104.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1106.a_sp6.1107.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1106.a_sp6.1107.b_trace.pdf" target="_blank">images/sp6.1106.a_sp6.1107.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1106.a_sp6.1107.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1106.a_sp6.1107.b_apertureparms.pdf" target="_blank">images/sp6.1106.a_sp6.1107.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Calibrators</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1048.a_sp6.1049.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1048.a_sp6.1049.b_trace.pdf" target="_blank">images/sp6.1048.a_sp6.1049.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1048.a_sp6.1049.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1048.a_sp6.1049.b_apertureparms.pdf" target="_blank">images/sp6.1048.a_sp6.1049.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1051.a_sp6.1050.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1051.a_sp6.1050.b_trace.pdf" target="_blank">images/sp6.1051.a_sp6.1050.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1051.a_sp6.1050.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1051.a_sp6.1050.b_apertureparms.pdf" target="_blank">images/sp6.1051.a_sp6.1050.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1052.a_sp6.1053.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1052.a_sp6.1053.b_trace.pdf" target="_blank">images/sp6.1052.a_sp6.1053.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1052.a_sp6.1053.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1052.a_sp6.1053.b_apertureparms.pdf" target="_blank">images/sp6.1052.a_sp6.1053.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1055.a_sp6.1054.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1055.a_sp6.1054.b_trace.pdf" target="_blank">images/sp6.1055.a_sp6.1054.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1055.a_sp6.1054.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1055.a_sp6.1054.b_apertureparms.pdf" target="_blank">images/sp6.1055.a_sp6.1054.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1056.a_sp6.1057.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1056.a_sp6.1057.b_trace.pdf" target="_blank">images/sp6.1056.a_sp6.1057.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1056.a_sp6.1057.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1056.a_sp6.1057.b_apertureparms.pdf" target="_blank">images/sp6.1056.a_sp6.1057.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+<!--
+</div>
+-->
+<hr>
+
+<!-- SOURCE TEMPLATE -->
+
+<!--
+<button type="button" class="collapsible">929 Prism</button>
+<div class="content">
+-->
+
+<h3>929 (Prism mode)</h3>
+
+<!-- CALIBRATED SPECTRUM -->
+
+<h4>Reduced Spectrum and Source Information</h4>
+
+<table>
+ <tr>
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/calspec1108-1117.pdf" width=300 height=300></a>
+    <br>[<a href="images/calspec1108-1117.pdf" target="_blank">images/calspec1108-1117.pdf</a>]
+    <br>[<a href=".\proc\calspec1108-1117.fits" download="calspec1108-1117.fits">calspec1108-1117.fits</a>]
+  </td>
+  <td align="left">
+   <ul>
+    <li>Source Name: 929 (moving-ps) [<a href="https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=929" target="_blank">JPL SBDB</a>]
+    <li>Coordinate: 18:13:47.39 -18:15:50.8 at MJD 52081.42403  
+    <li>Standard: land 110-361 (nan) [<a href="https://simbad.u-strasbg.fr/simbad/sim-id?Ident=land++110-361&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" target="_blank">SIMBAD</a>]
+    <li>Target Airmass: 1.279
+    <li>Standard Airmass: 1.065
+    <li>UT time: 10:35 to 34:41
+    <li>Total Integration: 600.0 sec
+    <li>Mode: Prism
+    <li>Slit: 0.8x15
+    <li>Files: Target 1108-1117, Standard 1118-1127
+   </ul>
+  </td>
+ </tr>
+</table>
+
+
+<!-- INDIVIDUAL SOURCE SPECTRA -->
+
+<button type="button" class="collapsible">Target Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1108-1117_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1108-1117_raw.pdf" target="_blank">images/combspec1108-1117_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1108-1117_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1108-1117_scaled.pdf" target="_blank">images/combspec1108-1117_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1108-1117.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1108-1117.pdf" target="_blank">images/combspec1108-1117.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1108.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1108.pdf" target="_blank">images/spectra1108.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1109.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1109.pdf" target="_blank">images/spectra1109.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1110.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1110.pdf" target="_blank">images/spectra1110.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1111.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1111.pdf" target="_blank">images/spectra1111.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1112.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1112.pdf" target="_blank">images/spectra1112.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1113.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1113.pdf" target="_blank">images/spectra1113.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1114.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1114.pdf" target="_blank">images/spectra1114.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1115.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1115.pdf" target="_blank">images/spectra1115.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1116.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1116.pdf" target="_blank">images/spectra1116.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1117.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1117.pdf" target="_blank">images/spectra1117.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- INDIVIDUAL TELLURIC SPECTRA -->
+
+<button type="button" class="collapsible">Calibrator Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1118-1127_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1118-1127_raw.pdf" target="_blank">images/combspec1118-1127_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1118-1127_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1118-1127_scaled.pdf" target="_blank">images/combspec1118-1127_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1118-1127.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1118-1127.pdf" target="_blank">images/combspec1118-1127.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1118.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1118.pdf" target="_blank">images/spectra1118.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1119.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1119.pdf" target="_blank">images/spectra1119.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1120.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1120.pdf" target="_blank">images/spectra1120.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1121.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1121.pdf" target="_blank">images/spectra1121.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1122.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1122.pdf" target="_blank">images/spectra1122.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1123.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1123.pdf" target="_blank">images/spectra1123.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1124.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1124.pdf" target="_blank">images/spectra1124.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1125.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1125.pdf" target="_blank">images/spectra1125.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1126.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1126.pdf" target="_blank">images/spectra1126.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1127.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1127.pdf" target="_blank">images/spectra1127.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- TRACES & APERTURE PARAMETERS -->
+
+<button type="button" class="collapsible">Traces and Apertures</button>
+<div class="content">
+
+<h4>Targets</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1108.a_sp6.1109.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1108.a_sp6.1109.b_trace.pdf" target="_blank">images/sp6.1108.a_sp6.1109.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1108.a_sp6.1109.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1108.a_sp6.1109.b_apertureparms.pdf" target="_blank">images/sp6.1108.a_sp6.1109.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1111.a_sp6.1110.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1111.a_sp6.1110.b_trace.pdf" target="_blank">images/sp6.1111.a_sp6.1110.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1111.a_sp6.1110.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1111.a_sp6.1110.b_apertureparms.pdf" target="_blank">images/sp6.1111.a_sp6.1110.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1112.a_sp6.1113.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1112.a_sp6.1113.b_trace.pdf" target="_blank">images/sp6.1112.a_sp6.1113.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1112.a_sp6.1113.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1112.a_sp6.1113.b_apertureparms.pdf" target="_blank">images/sp6.1112.a_sp6.1113.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1114.a_sp6.1115.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1114.a_sp6.1115.b_trace.pdf" target="_blank">images/sp6.1114.a_sp6.1115.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1114.a_sp6.1115.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1114.a_sp6.1115.b_apertureparms.pdf" target="_blank">images/sp6.1114.a_sp6.1115.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1117.a_sp6.1116.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1117.a_sp6.1116.b_trace.pdf" target="_blank">images/sp6.1117.a_sp6.1116.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1117.a_sp6.1116.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1117.a_sp6.1116.b_apertureparms.pdf" target="_blank">images/sp6.1117.a_sp6.1116.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Calibrators</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1118.a_sp6.1119.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1118.a_sp6.1119.b_trace.pdf" target="_blank">images/sp6.1118.a_sp6.1119.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1118.a_sp6.1119.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1118.a_sp6.1119.b_apertureparms.pdf" target="_blank">images/sp6.1118.a_sp6.1119.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1121.a_sp6.1120.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1121.a_sp6.1120.b_trace.pdf" target="_blank">images/sp6.1121.a_sp6.1120.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1121.a_sp6.1120.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1121.a_sp6.1120.b_apertureparms.pdf" target="_blank">images/sp6.1121.a_sp6.1120.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1122.a_sp6.1123.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1122.a_sp6.1123.b_trace.pdf" target="_blank">images/sp6.1122.a_sp6.1123.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1122.a_sp6.1123.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1122.a_sp6.1123.b_apertureparms.pdf" target="_blank">images/sp6.1122.a_sp6.1123.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1125.a_sp6.1124.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1125.a_sp6.1124.b_trace.pdf" target="_blank">images/sp6.1125.a_sp6.1124.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1125.a_sp6.1124.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1125.a_sp6.1124.b_apertureparms.pdf" target="_blank">images/sp6.1125.a_sp6.1124.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1126.a_sp6.1127.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1126.a_sp6.1127.b_trace.pdf" target="_blank">images/sp6.1126.a_sp6.1127.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1126.a_sp6.1127.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1126.a_sp6.1127.b_apertureparms.pdf" target="_blank">images/sp6.1126.a_sp6.1127.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+<!--
+</div>
+-->
+<hr>
+
+<!-- SOURCE TEMPLATE -->
+
+<!--
+<button type="button" class="collapsible">2001 KP41 Prism</button>
+<div class="content">
+-->
+
+<h3>2001 KP41 (Prism mode)</h3>
+
+<!-- CALIBRATED SPECTRUM -->
+
+<h4>Reduced Spectrum and Source Information</h4>
+
+<table>
+ <tr>
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/calspec1128-1141.pdf" width=300 height=300></a>
+    <br>[<a href="images/calspec1128-1141.pdf" target="_blank">images/calspec1128-1141.pdf</a>]
+    <br>[<a href=".\proc\calspec1128-1141.fits" download="calspec1128-1141.fits">calspec1128-1141.fits</a>]
+  </td>
+  <td align="left">
+   <ul>
+    <li>Source Name: 2001 KP41 (moving-ps) [<a href="https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=2001KP41" target="_blank">JPL SBDB</a>]
+    <li>Coordinate: 20:00:06.9 +09:43:13.7 at MJD 52081.47271  
+    <li>Standard: land_ 112-1333 (F8) [<a href="https://simbad.u-strasbg.fr/simbad/sim-id?Ident=land_++112-1333&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" target="_blank">SIMBAD</a>]
+    <li>Target Airmass: 1.05
+    <li>Standard Airmass: 1.065
+    <li>UT time: 20:42 to 51:20
+    <li>Total Integration: 1680.0 sec
+    <li>Mode: Prism
+    <li>Slit: 0.8x15
+    <li>Files: Target 1128-1141, Standard 1172-1181
+   </ul>
+  </td>
+ </tr>
+</table>
+
+
+<!-- INDIVIDUAL SOURCE SPECTRA -->
+
+<button type="button" class="collapsible">Target Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1128-1141_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1128-1141_raw.pdf" target="_blank">images/combspec1128-1141_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1128-1141_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1128-1141_scaled.pdf" target="_blank">images/combspec1128-1141_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1128-1141.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1128-1141.pdf" target="_blank">images/combspec1128-1141.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1128.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1128.pdf" target="_blank">images/spectra1128.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1129.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1129.pdf" target="_blank">images/spectra1129.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1130.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1130.pdf" target="_blank">images/spectra1130.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1131.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1131.pdf" target="_blank">images/spectra1131.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1132.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1132.pdf" target="_blank">images/spectra1132.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1133.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1133.pdf" target="_blank">images/spectra1133.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1134.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1134.pdf" target="_blank">images/spectra1134.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1135.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1135.pdf" target="_blank">images/spectra1135.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1136.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1136.pdf" target="_blank">images/spectra1136.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1137.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1137.pdf" target="_blank">images/spectra1137.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1138.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1138.pdf" target="_blank">images/spectra1138.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1139.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1139.pdf" target="_blank">images/spectra1139.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1140.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1140.pdf" target="_blank">images/spectra1140.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1141.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1141.pdf" target="_blank">images/spectra1141.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- INDIVIDUAL TELLURIC SPECTRA -->
+
+<button type="button" class="collapsible">Calibrator Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1172-1181_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1172-1181_raw.pdf" target="_blank">images/combspec1172-1181_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1172-1181_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1172-1181_scaled.pdf" target="_blank">images/combspec1172-1181_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1172-1181.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1172-1181.pdf" target="_blank">images/combspec1172-1181.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1172.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1172.pdf" target="_blank">images/spectra1172.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1173.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1173.pdf" target="_blank">images/spectra1173.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1174.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1174.pdf" target="_blank">images/spectra1174.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1175.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1175.pdf" target="_blank">images/spectra1175.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1176.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1176.pdf" target="_blank">images/spectra1176.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1177.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1177.pdf" target="_blank">images/spectra1177.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1178.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1178.pdf" target="_blank">images/spectra1178.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1179.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1179.pdf" target="_blank">images/spectra1179.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1180.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1180.pdf" target="_blank">images/spectra1180.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1181.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1181.pdf" target="_blank">images/spectra1181.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- TRACES & APERTURE PARAMETERS -->
+
+<button type="button" class="collapsible">Traces and Apertures</button>
+<div class="content">
+
+<h4>Targets</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1128.a_sp6.1129.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1128.a_sp6.1129.b_trace.pdf" target="_blank">images/sp6.1128.a_sp6.1129.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1128.a_sp6.1129.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1128.a_sp6.1129.b_apertureparms.pdf" target="_blank">images/sp6.1128.a_sp6.1129.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1131.a_sp6.1130.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1131.a_sp6.1130.b_trace.pdf" target="_blank">images/sp6.1131.a_sp6.1130.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1131.a_sp6.1130.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1131.a_sp6.1130.b_apertureparms.pdf" target="_blank">images/sp6.1131.a_sp6.1130.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1132.a_sp6.1133.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1132.a_sp6.1133.b_trace.pdf" target="_blank">images/sp6.1132.a_sp6.1133.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1132.a_sp6.1133.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1132.a_sp6.1133.b_apertureparms.pdf" target="_blank">images/sp6.1132.a_sp6.1133.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1135.a_sp6.1134.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1135.a_sp6.1134.b_trace.pdf" target="_blank">images/sp6.1135.a_sp6.1134.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1135.a_sp6.1134.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1135.a_sp6.1134.b_apertureparms.pdf" target="_blank">images/sp6.1135.a_sp6.1134.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1136.a_sp6.1137.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1136.a_sp6.1137.b_trace.pdf" target="_blank">images/sp6.1136.a_sp6.1137.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1136.a_sp6.1137.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1136.a_sp6.1137.b_apertureparms.pdf" target="_blank">images/sp6.1136.a_sp6.1137.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1138.a_sp6.1139.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1138.a_sp6.1139.b_trace.pdf" target="_blank">images/sp6.1138.a_sp6.1139.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1138.a_sp6.1139.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1138.a_sp6.1139.b_apertureparms.pdf" target="_blank">images/sp6.1138.a_sp6.1139.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1141.a_sp6.1140.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1141.a_sp6.1140.b_trace.pdf" target="_blank">images/sp6.1141.a_sp6.1140.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1141.a_sp6.1140.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1141.a_sp6.1140.b_apertureparms.pdf" target="_blank">images/sp6.1141.a_sp6.1140.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Calibrators</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1172.a_sp6.1173.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1172.a_sp6.1173.b_trace.pdf" target="_blank">images/sp6.1172.a_sp6.1173.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1172.a_sp6.1173.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1172.a_sp6.1173.b_apertureparms.pdf" target="_blank">images/sp6.1172.a_sp6.1173.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1175.a_sp6.1174.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1175.a_sp6.1174.b_trace.pdf" target="_blank">images/sp6.1175.a_sp6.1174.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1175.a_sp6.1174.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1175.a_sp6.1174.b_apertureparms.pdf" target="_blank">images/sp6.1175.a_sp6.1174.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1176.a_sp6.1177.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1176.a_sp6.1177.b_trace.pdf" target="_blank">images/sp6.1176.a_sp6.1177.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1176.a_sp6.1177.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1176.a_sp6.1177.b_apertureparms.pdf" target="_blank">images/sp6.1176.a_sp6.1177.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1179.a_sp6.1178.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1179.a_sp6.1178.b_trace.pdf" target="_blank">images/sp6.1179.a_sp6.1178.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1179.a_sp6.1178.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1179.a_sp6.1178.b_apertureparms.pdf" target="_blank">images/sp6.1179.a_sp6.1178.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1180.a_sp6.1181.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1180.a_sp6.1181.b_trace.pdf" target="_blank">images/sp6.1180.a_sp6.1181.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1180.a_sp6.1181.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1180.a_sp6.1181.b_apertureparms.pdf" target="_blank">images/sp6.1180.a_sp6.1181.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+<!--
+</div>
+-->
+<hr>
+
+<!-- SOURCE TEMPLATE -->
+
+<!--
+<button type="button" class="collapsible">4570 Prism</button>
+<div class="content">
+-->
+
+<h3>4570 (Prism mode)</h3>
+
+<!-- CALIBRATED SPECTRUM -->
+
+<h4>Reduced Spectrum and Source Information</h4>
+
+<table>
+ <tr>
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/calspec1142-1157.pdf" width=300 height=300></a>
+    <br>[<a href="images/calspec1142-1157.pdf" target="_blank">images/calspec1142-1157.pdf</a>]
+    <br>[<a href=".\proc\calspec1142-1157.fits" download="calspec1142-1157.fits">calspec1142-1157.fits</a>]
+  </td>
+  <td align="left">
+   <ul>
+    <li>Source Name: 4570 (moving-ps) [<a href="https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=4570" target="_blank">JPL SBDB</a>]
+    <li>Coordinate: 19:58:47.53 -29:01:19.2 at MJD 52081.49929  
+    <li>Standard: land_ 112-1333 (F8) [<a href="https://simbad.u-strasbg.fr/simbad/sim-id?Ident=land_++112-1333&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" target="_blank">SIMBAD</a>]
+    <li>Target Airmass: 1.527
+    <li>Standard Airmass: 1.065
+    <li>UT time: 58:58 to 34:19
+    <li>Total Integration: 1920.0 sec
+    <li>Mode: Prism
+    <li>Slit: 0.8x15
+    <li>Files: Target 1142-1157, Standard 1172-1181
+   </ul>
+  </td>
+ </tr>
+</table>
+
+
+<!-- INDIVIDUAL SOURCE SPECTRA -->
+
+<button type="button" class="collapsible">Target Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1142-1157_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1142-1157_raw.pdf" target="_blank">images/combspec1142-1157_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1142-1157_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1142-1157_scaled.pdf" target="_blank">images/combspec1142-1157_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1142-1157.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1142-1157.pdf" target="_blank">images/combspec1142-1157.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1142.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1142.pdf" target="_blank">images/spectra1142.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1143.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1143.pdf" target="_blank">images/spectra1143.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1144.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1144.pdf" target="_blank">images/spectra1144.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1145.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1145.pdf" target="_blank">images/spectra1145.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1146.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1146.pdf" target="_blank">images/spectra1146.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1147.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1147.pdf" target="_blank">images/spectra1147.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1148.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1148.pdf" target="_blank">images/spectra1148.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1149.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1149.pdf" target="_blank">images/spectra1149.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1150.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1150.pdf" target="_blank">images/spectra1150.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1151.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1151.pdf" target="_blank">images/spectra1151.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1152.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1152.pdf" target="_blank">images/spectra1152.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1153.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1153.pdf" target="_blank">images/spectra1153.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1154.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1154.pdf" target="_blank">images/spectra1154.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1155.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1155.pdf" target="_blank">images/spectra1155.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1156.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1156.pdf" target="_blank">images/spectra1156.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1157.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1157.pdf" target="_blank">images/spectra1157.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- INDIVIDUAL TELLURIC SPECTRA -->
+
+<button type="button" class="collapsible">Calibrator Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1172-1181_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1172-1181_raw.pdf" target="_blank">images/combspec1172-1181_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1172-1181_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1172-1181_scaled.pdf" target="_blank">images/combspec1172-1181_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1172-1181.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1172-1181.pdf" target="_blank">images/combspec1172-1181.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1172.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1172.pdf" target="_blank">images/spectra1172.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1173.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1173.pdf" target="_blank">images/spectra1173.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1174.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1174.pdf" target="_blank">images/spectra1174.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1175.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1175.pdf" target="_blank">images/spectra1175.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1176.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1176.pdf" target="_blank">images/spectra1176.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1177.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1177.pdf" target="_blank">images/spectra1177.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1178.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1178.pdf" target="_blank">images/spectra1178.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1179.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1179.pdf" target="_blank">images/spectra1179.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1180.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1180.pdf" target="_blank">images/spectra1180.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1181.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1181.pdf" target="_blank">images/spectra1181.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- TRACES & APERTURE PARAMETERS -->
+
+<button type="button" class="collapsible">Traces and Apertures</button>
+<div class="content">
+
+<h4>Targets</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1142.a_sp6.1143.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1142.a_sp6.1143.b_trace.pdf" target="_blank">images/sp6.1142.a_sp6.1143.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1142.a_sp6.1143.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1142.a_sp6.1143.b_apertureparms.pdf" target="_blank">images/sp6.1142.a_sp6.1143.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1145.a_sp6.1144.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1145.a_sp6.1144.b_trace.pdf" target="_blank">images/sp6.1145.a_sp6.1144.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1145.a_sp6.1144.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1145.a_sp6.1144.b_apertureparms.pdf" target="_blank">images/sp6.1145.a_sp6.1144.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1146.a_sp6.1147.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1146.a_sp6.1147.b_trace.pdf" target="_blank">images/sp6.1146.a_sp6.1147.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1146.a_sp6.1147.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1146.a_sp6.1147.b_apertureparms.pdf" target="_blank">images/sp6.1146.a_sp6.1147.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1149.a_sp6.1148.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1149.a_sp6.1148.b_trace.pdf" target="_blank">images/sp6.1149.a_sp6.1148.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1149.a_sp6.1148.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1149.a_sp6.1148.b_apertureparms.pdf" target="_blank">images/sp6.1149.a_sp6.1148.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1150.a_sp6.1151.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1150.a_sp6.1151.b_trace.pdf" target="_blank">images/sp6.1150.a_sp6.1151.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1150.a_sp6.1151.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1150.a_sp6.1151.b_apertureparms.pdf" target="_blank">images/sp6.1150.a_sp6.1151.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1152.a_sp6.1153.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1152.a_sp6.1153.b_trace.pdf" target="_blank">images/sp6.1152.a_sp6.1153.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1152.a_sp6.1153.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1152.a_sp6.1153.b_apertureparms.pdf" target="_blank">images/sp6.1152.a_sp6.1153.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1155.a_sp6.1154.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1155.a_sp6.1154.b_trace.pdf" target="_blank">images/sp6.1155.a_sp6.1154.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1155.a_sp6.1154.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1155.a_sp6.1154.b_apertureparms.pdf" target="_blank">images/sp6.1155.a_sp6.1154.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1156.a_sp6.1157.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1156.a_sp6.1157.b_trace.pdf" target="_blank">images/sp6.1156.a_sp6.1157.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1156.a_sp6.1157.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1156.a_sp6.1157.b_apertureparms.pdf" target="_blank">images/sp6.1156.a_sp6.1157.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Calibrators</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1172.a_sp6.1173.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1172.a_sp6.1173.b_trace.pdf" target="_blank">images/sp6.1172.a_sp6.1173.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1172.a_sp6.1173.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1172.a_sp6.1173.b_apertureparms.pdf" target="_blank">images/sp6.1172.a_sp6.1173.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1175.a_sp6.1174.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1175.a_sp6.1174.b_trace.pdf" target="_blank">images/sp6.1175.a_sp6.1174.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1175.a_sp6.1174.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1175.a_sp6.1174.b_apertureparms.pdf" target="_blank">images/sp6.1175.a_sp6.1174.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1176.a_sp6.1177.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1176.a_sp6.1177.b_trace.pdf" target="_blank">images/sp6.1176.a_sp6.1177.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1176.a_sp6.1177.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1176.a_sp6.1177.b_apertureparms.pdf" target="_blank">images/sp6.1176.a_sp6.1177.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1179.a_sp6.1178.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1179.a_sp6.1178.b_trace.pdf" target="_blank">images/sp6.1179.a_sp6.1178.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1179.a_sp6.1178.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1179.a_sp6.1178.b_apertureparms.pdf" target="_blank">images/sp6.1179.a_sp6.1178.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1180.a_sp6.1181.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1180.a_sp6.1181.b_trace.pdf" target="_blank">images/sp6.1180.a_sp6.1181.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1180.a_sp6.1181.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1180.a_sp6.1181.b_apertureparms.pdf" target="_blank">images/sp6.1180.a_sp6.1181.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+<!--
+</div>
+-->
+<hr>
+
+<!-- SOURCE TEMPLATE -->
+
+<!--
+<button type="button" class="collapsible">44 Prism</button>
+<div class="content">
+-->
+
+<h3>44 (Prism mode)</h3>
+
+<!-- CALIBRATED SPECTRUM -->
+
+<h4>Reduced Spectrum and Source Information</h4>
+
+<table>
+ <tr>
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/calspec1158-1171.pdf" width=300 height=300></a>
+    <br>[<a href="images/calspec1158-1171.pdf" target="_blank">images/calspec1158-1171.pdf</a>]
+    <br>[<a href=".\proc\calspec1158-1171.fits" download="calspec1158-1171.fits">calspec1158-1171.fits</a>]
+  </td>
+  <td align="left">
+   <ul>
+    <li>Source Name: 44 (moving-ps) [<a href="https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=44" target="_blank">JPL SBDB</a>]
+    <li>Coordinate: 20:38:20.7 -16:51:21.2 at MJD 52081.52891  
+    <li>Standard: land_ 112-1333 (F8) [<a href="https://simbad.u-strasbg.fr/simbad/sim-id?Ident=land_++112-1333&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" target="_blank">SIMBAD</a>]
+    <li>Target Airmass: 1.251
+    <li>Standard Airmass: 1.065
+    <li>UT time: 41:37 to 17:43
+    <li>Total Integration: 140.0 sec
+    <li>Mode: Prism
+    <li>Slit: 0.8x15
+    <li>Files: Target 1158-1171, Standard 1172-1181
+   </ul>
+  </td>
+ </tr>
+</table>
+
+
+<!-- INDIVIDUAL SOURCE SPECTRA -->
+
+<button type="button" class="collapsible">Target Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1158-1171_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1158-1171_raw.pdf" target="_blank">images/combspec1158-1171_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1158-1171_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1158-1171_scaled.pdf" target="_blank">images/combspec1158-1171_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1158-1171.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1158-1171.pdf" target="_blank">images/combspec1158-1171.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1158.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1158.pdf" target="_blank">images/spectra1158.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1159.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1159.pdf" target="_blank">images/spectra1159.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1160.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1160.pdf" target="_blank">images/spectra1160.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1161.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1161.pdf" target="_blank">images/spectra1161.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1162.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1162.pdf" target="_blank">images/spectra1162.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1163.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1163.pdf" target="_blank">images/spectra1163.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1164.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1164.pdf" target="_blank">images/spectra1164.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1165.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1165.pdf" target="_blank">images/spectra1165.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1166.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1166.pdf" target="_blank">images/spectra1166.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1167.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1167.pdf" target="_blank">images/spectra1167.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1168.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1168.pdf" target="_blank">images/spectra1168.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1169.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1169.pdf" target="_blank">images/spectra1169.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1170.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1170.pdf" target="_blank">images/spectra1170.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1171.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1171.pdf" target="_blank">images/spectra1171.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- INDIVIDUAL TELLURIC SPECTRA -->
+
+<button type="button" class="collapsible">Calibrator Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1172-1181_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1172-1181_raw.pdf" target="_blank">images/combspec1172-1181_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1172-1181_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1172-1181_scaled.pdf" target="_blank">images/combspec1172-1181_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1172-1181.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1172-1181.pdf" target="_blank">images/combspec1172-1181.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1172.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1172.pdf" target="_blank">images/spectra1172.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1173.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1173.pdf" target="_blank">images/spectra1173.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1174.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1174.pdf" target="_blank">images/spectra1174.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1175.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1175.pdf" target="_blank">images/spectra1175.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1176.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1176.pdf" target="_blank">images/spectra1176.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1177.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1177.pdf" target="_blank">images/spectra1177.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1178.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1178.pdf" target="_blank">images/spectra1178.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1179.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1179.pdf" target="_blank">images/spectra1179.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1180.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1180.pdf" target="_blank">images/spectra1180.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1181.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1181.pdf" target="_blank">images/spectra1181.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- TRACES & APERTURE PARAMETERS -->
+
+<button type="button" class="collapsible">Traces and Apertures</button>
+<div class="content">
+
+<h4>Targets</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1158.a_sp6.1159.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1158.a_sp6.1159.b_trace.pdf" target="_blank">images/sp6.1158.a_sp6.1159.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1158.a_sp6.1159.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1158.a_sp6.1159.b_apertureparms.pdf" target="_blank">images/sp6.1158.a_sp6.1159.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1161.a_sp6.1160.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1161.a_sp6.1160.b_trace.pdf" target="_blank">images/sp6.1161.a_sp6.1160.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1161.a_sp6.1160.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1161.a_sp6.1160.b_apertureparms.pdf" target="_blank">images/sp6.1161.a_sp6.1160.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1162.a_sp6.1163.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1162.a_sp6.1163.b_trace.pdf" target="_blank">images/sp6.1162.a_sp6.1163.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1162.a_sp6.1163.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1162.a_sp6.1163.b_apertureparms.pdf" target="_blank">images/sp6.1162.a_sp6.1163.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1165.a_sp6.1164.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1165.a_sp6.1164.b_trace.pdf" target="_blank">images/sp6.1165.a_sp6.1164.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1165.a_sp6.1164.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1165.a_sp6.1164.b_apertureparms.pdf" target="_blank">images/sp6.1165.a_sp6.1164.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1166.a_sp6.1167.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1166.a_sp6.1167.b_trace.pdf" target="_blank">images/sp6.1166.a_sp6.1167.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1166.a_sp6.1167.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1166.a_sp6.1167.b_apertureparms.pdf" target="_blank">images/sp6.1166.a_sp6.1167.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1168.a_sp6.1169.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1168.a_sp6.1169.b_trace.pdf" target="_blank">images/sp6.1168.a_sp6.1169.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1168.a_sp6.1169.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1168.a_sp6.1169.b_apertureparms.pdf" target="_blank">images/sp6.1168.a_sp6.1169.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1171.a_sp6.1170.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1171.a_sp6.1170.b_trace.pdf" target="_blank">images/sp6.1171.a_sp6.1170.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1171.a_sp6.1170.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1171.a_sp6.1170.b_apertureparms.pdf" target="_blank">images/sp6.1171.a_sp6.1170.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Calibrators</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1172.a_sp6.1173.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1172.a_sp6.1173.b_trace.pdf" target="_blank">images/sp6.1172.a_sp6.1173.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1172.a_sp6.1173.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1172.a_sp6.1173.b_apertureparms.pdf" target="_blank">images/sp6.1172.a_sp6.1173.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1175.a_sp6.1174.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1175.a_sp6.1174.b_trace.pdf" target="_blank">images/sp6.1175.a_sp6.1174.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1175.a_sp6.1174.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1175.a_sp6.1174.b_apertureparms.pdf" target="_blank">images/sp6.1175.a_sp6.1174.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1176.a_sp6.1177.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1176.a_sp6.1177.b_trace.pdf" target="_blank">images/sp6.1176.a_sp6.1177.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1176.a_sp6.1177.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1176.a_sp6.1177.b_apertureparms.pdf" target="_blank">images/sp6.1176.a_sp6.1177.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1179.a_sp6.1178.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1179.a_sp6.1178.b_trace.pdf" target="_blank">images/sp6.1179.a_sp6.1178.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1179.a_sp6.1178.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1179.a_sp6.1178.b_apertureparms.pdf" target="_blank">images/sp6.1179.a_sp6.1178.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1180.a_sp6.1181.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1180.a_sp6.1181.b_trace.pdf" target="_blank">images/sp6.1180.a_sp6.1181.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1180.a_sp6.1181.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1180.a_sp6.1181.b_apertureparms.pdf" target="_blank">images/sp6.1180.a_sp6.1181.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+<!--
+</div>
+-->
+<hr>
+
+<!-- SOURCE TEMPLATE -->
+
+<!--
+<button type="button" class="collapsible">3103 Prism</button>
+<div class="content">
+-->
+
+<h3>3103 (Prism mode)</h3>
+
+<!-- CALIBRATED SPECTRUM -->
+
+<h4>Reduced Spectrum and Source Information</h4>
+
+<table>
+ <tr>
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/calspec1182-1195.pdf" width=300 height=300></a>
+    <br>[<a href="images/calspec1182-1195.pdf" target="_blank">images/calspec1182-1195.pdf</a>]
+    <br>[<a href=".\proc\calspec1182-1195.fits" download="calspec1182-1195.fits">calspec1182-1195.fits</a>]
+  </td>
+  <td align="left">
+   <ul>
+    <li>Source Name: 3103 (moving-ps) [<a href="https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=3103" target="_blank">JPL SBDB</a>]
+    <li>Coordinate: 21:10:35.91 +12:25:42.3 at MJD 52081.57386  
+    <li>Standard: land_ 112-1333 (F8) [<a href="https://simbad.u-strasbg.fr/simbad/sim-id?Ident=land_++112-1333&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" target="_blank">SIMBAD</a>]
+    <li>Target Airmass: 1.01
+    <li>Standard Airmass: 1.065
+    <li>UT time: 46:21 to 17:09
+    <li>Total Integration: 1680.0 sec
+    <li>Mode: Prism
+    <li>Slit: 0.8x15
+    <li>Files: Target 1182-1195, Standard 1172-1181
+   </ul>
+  </td>
+ </tr>
+</table>
+
+
+<!-- INDIVIDUAL SOURCE SPECTRA -->
+
+<button type="button" class="collapsible">Target Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1182-1195_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1182-1195_raw.pdf" target="_blank">images/combspec1182-1195_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1182-1195_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1182-1195_scaled.pdf" target="_blank">images/combspec1182-1195_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1182-1195.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1182-1195.pdf" target="_blank">images/combspec1182-1195.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1182.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1182.pdf" target="_blank">images/spectra1182.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1183.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1183.pdf" target="_blank">images/spectra1183.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1184.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1184.pdf" target="_blank">images/spectra1184.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1185.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1185.pdf" target="_blank">images/spectra1185.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1186.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1186.pdf" target="_blank">images/spectra1186.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1187.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1187.pdf" target="_blank">images/spectra1187.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1188.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1188.pdf" target="_blank">images/spectra1188.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1189.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1189.pdf" target="_blank">images/spectra1189.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1190.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1190.pdf" target="_blank">images/spectra1190.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1191.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1191.pdf" target="_blank">images/spectra1191.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1192.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1192.pdf" target="_blank">images/spectra1192.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1193.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1193.pdf" target="_blank">images/spectra1193.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1194.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1194.pdf" target="_blank">images/spectra1194.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1195.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1195.pdf" target="_blank">images/spectra1195.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- INDIVIDUAL TELLURIC SPECTRA -->
+
+<button type="button" class="collapsible">Calibrator Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1172-1181_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1172-1181_raw.pdf" target="_blank">images/combspec1172-1181_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1172-1181_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1172-1181_scaled.pdf" target="_blank">images/combspec1172-1181_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1172-1181.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1172-1181.pdf" target="_blank">images/combspec1172-1181.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1172.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1172.pdf" target="_blank">images/spectra1172.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1173.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1173.pdf" target="_blank">images/spectra1173.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1174.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1174.pdf" target="_blank">images/spectra1174.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1175.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1175.pdf" target="_blank">images/spectra1175.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1176.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1176.pdf" target="_blank">images/spectra1176.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1177.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1177.pdf" target="_blank">images/spectra1177.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1178.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1178.pdf" target="_blank">images/spectra1178.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1179.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1179.pdf" target="_blank">images/spectra1179.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1180.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1180.pdf" target="_blank">images/spectra1180.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1181.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1181.pdf" target="_blank">images/spectra1181.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- TRACES & APERTURE PARAMETERS -->
+
+<button type="button" class="collapsible">Traces and Apertures</button>
+<div class="content">
+
+<h4>Targets</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1182.a_sp6.1183.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1182.a_sp6.1183.b_trace.pdf" target="_blank">images/sp6.1182.a_sp6.1183.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1182.a_sp6.1183.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1182.a_sp6.1183.b_apertureparms.pdf" target="_blank">images/sp6.1182.a_sp6.1183.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1185.a_sp6.1184.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1185.a_sp6.1184.b_trace.pdf" target="_blank">images/sp6.1185.a_sp6.1184.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1185.a_sp6.1184.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1185.a_sp6.1184.b_apertureparms.pdf" target="_blank">images/sp6.1185.a_sp6.1184.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1186.a_sp6.1187.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1186.a_sp6.1187.b_trace.pdf" target="_blank">images/sp6.1186.a_sp6.1187.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1186.a_sp6.1187.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1186.a_sp6.1187.b_apertureparms.pdf" target="_blank">images/sp6.1186.a_sp6.1187.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1189.a_sp6.1188.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1189.a_sp6.1188.b_trace.pdf" target="_blank">images/sp6.1189.a_sp6.1188.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1189.a_sp6.1188.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1189.a_sp6.1188.b_apertureparms.pdf" target="_blank">images/sp6.1189.a_sp6.1188.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1190.a_sp6.1191.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1190.a_sp6.1191.b_trace.pdf" target="_blank">images/sp6.1190.a_sp6.1191.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1190.a_sp6.1191.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1190.a_sp6.1191.b_apertureparms.pdf" target="_blank">images/sp6.1190.a_sp6.1191.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1192.a_sp6.1193.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1192.a_sp6.1193.b_trace.pdf" target="_blank">images/sp6.1192.a_sp6.1193.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1192.a_sp6.1193.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1192.a_sp6.1193.b_apertureparms.pdf" target="_blank">images/sp6.1192.a_sp6.1193.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1195.a_sp6.1194.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1195.a_sp6.1194.b_trace.pdf" target="_blank">images/sp6.1195.a_sp6.1194.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1195.a_sp6.1194.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1195.a_sp6.1194.b_apertureparms.pdf" target="_blank">images/sp6.1195.a_sp6.1194.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Calibrators</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1172.a_sp6.1173.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1172.a_sp6.1173.b_trace.pdf" target="_blank">images/sp6.1172.a_sp6.1173.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1172.a_sp6.1173.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1172.a_sp6.1173.b_apertureparms.pdf" target="_blank">images/sp6.1172.a_sp6.1173.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1175.a_sp6.1174.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1175.a_sp6.1174.b_trace.pdf" target="_blank">images/sp6.1175.a_sp6.1174.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1175.a_sp6.1174.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1175.a_sp6.1174.b_apertureparms.pdf" target="_blank">images/sp6.1175.a_sp6.1174.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1176.a_sp6.1177.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1176.a_sp6.1177.b_trace.pdf" target="_blank">images/sp6.1176.a_sp6.1177.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1176.a_sp6.1177.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1176.a_sp6.1177.b_apertureparms.pdf" target="_blank">images/sp6.1176.a_sp6.1177.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1179.a_sp6.1178.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1179.a_sp6.1178.b_trace.pdf" target="_blank">images/sp6.1179.a_sp6.1178.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1179.a_sp6.1178.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1179.a_sp6.1178.b_apertureparms.pdf" target="_blank">images/sp6.1179.a_sp6.1178.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1180.a_sp6.1181.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1180.a_sp6.1181.b_trace.pdf" target="_blank">images/sp6.1180.a_sp6.1181.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1180.a_sp6.1181.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1180.a_sp6.1181.b_apertureparms.pdf" target="_blank">images/sp6.1180.a_sp6.1181.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+<!--
+</div>
+-->
+<hr>
+
+<!-- SOURCE TEMPLATE -->
+
+<!--
+<button type="button" class="collapsible">1350 Prism</button>
+<div class="content">
+-->
+
+<h3>1350 (Prism mode)</h3>
+
+<!-- CALIBRATED SPECTRUM -->
+
+<h4>Reduced Spectrum and Source Information</h4>
+
+<table>
+ <tr>
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/calspec1196-1209.pdf" width=300 height=300></a>
+    <br>[<a href="images/calspec1196-1209.pdf" target="_blank">images/calspec1196-1209.pdf</a>]
+    <br>[<a href=".\proc\calspec1196-1209.fits" download="calspec1196-1209.fits">calspec1196-1209.fits</a>]
+  </td>
+  <td align="left">
+   <ul>
+    <li>Source Name: 1350 (fixed-ps) 
+    <li>Coordinate: 21:42:46.14 -12:45:59.1 [<a href="https://aladin.cds.unistra.fr/AladinLite/?target=J21424614-1245591&fov=0.12&survey=CDS%2FP%2F2MASS%2Fcolor" target="_blank">Aladin</a>] [<a href="https://simbad.cds.unistra.fr/simbad/sim-coo?Coord=J21424614-1245591&CooFrame=FK5&CooEpoch=2000&CooEqui=2000&CooDefinedFrames=none&Radius=2&Radius.unit=arcmin&submit=submit+query&CoordList=" target="_blank">SIMBAD</a>]
+    <li>Standard: land_ 112-1333 (F8) [<a href="https://simbad.u-strasbg.fr/simbad/sim-id?Ident=land_++112-1333&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" target="_blank">SIMBAD</a>]
+    <li>Target Airmass: 1.192
+    <li>Standard Airmass: 1.065
+    <li>UT time: 24:05 to 54:41
+    <li>Total Integration: 1680.0 sec
+    <li>Mode: Prism
+    <li>Slit: 0.8x15
+    <li>Files: Target 1196-1209, Standard 1172-1181
+   </ul>
+  </td>
+ </tr>
+</table>
+
+
+<!-- INDIVIDUAL SOURCE SPECTRA -->
+
+<button type="button" class="collapsible">Target Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1196-1209_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1196-1209_raw.pdf" target="_blank">images/combspec1196-1209_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1196-1209_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1196-1209_scaled.pdf" target="_blank">images/combspec1196-1209_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1196-1209.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1196-1209.pdf" target="_blank">images/combspec1196-1209.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1196.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1196.pdf" target="_blank">images/spectra1196.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1197.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1197.pdf" target="_blank">images/spectra1197.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1198.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1198.pdf" target="_blank">images/spectra1198.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1199.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1199.pdf" target="_blank">images/spectra1199.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1200.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1200.pdf" target="_blank">images/spectra1200.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1201.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1201.pdf" target="_blank">images/spectra1201.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1202.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1202.pdf" target="_blank">images/spectra1202.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1203.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1203.pdf" target="_blank">images/spectra1203.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1204.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1204.pdf" target="_blank">images/spectra1204.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1205.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1205.pdf" target="_blank">images/spectra1205.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1206.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1206.pdf" target="_blank">images/spectra1206.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1207.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1207.pdf" target="_blank">images/spectra1207.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1208.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1208.pdf" target="_blank">images/spectra1208.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1209.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1209.pdf" target="_blank">images/spectra1209.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- INDIVIDUAL TELLURIC SPECTRA -->
+
+<button type="button" class="collapsible">Calibrator Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1172-1181_raw.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1172-1181_raw.pdf" target="_blank">images/combspec1172-1181_raw.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1172-1181_scaled.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1172-1181_scaled.pdf" target="_blank">images/combspec1172-1181_scaled.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/combspec1172-1181.pdf" width=300 height=300></a>
+    <br>[<a href="images/combspec1172-1181.pdf" target="_blank">images/combspec1172-1181.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+
+<h4>Individual Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra1172.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1172.pdf" target="_blank">images/spectra1172.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1173.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1173.pdf" target="_blank">images/spectra1173.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1174.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1174.pdf" target="_blank">images/spectra1174.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1175.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1175.pdf" target="_blank">images/spectra1175.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1176.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1176.pdf" target="_blank">images/spectra1176.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1177.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1177.pdf" target="_blank">images/spectra1177.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1178.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1178.pdf" target="_blank">images/spectra1178.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1179.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1179.pdf" target="_blank">images/spectra1179.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/spectra1180.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1180.pdf" target="_blank">images/spectra1180.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra1181.pdf" width=300 height=300></a>
+    <br>[<a href="images/spectra1181.pdf" target="_blank">images/spectra1181.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- TRACES & APERTURE PARAMETERS -->
+
+<button type="button" class="collapsible">Traces and Apertures</button>
+<div class="content">
+
+<h4>Targets</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1196.a_sp6.1197.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1196.a_sp6.1197.b_trace.pdf" target="_blank">images/sp6.1196.a_sp6.1197.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1196.a_sp6.1197.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1196.a_sp6.1197.b_apertureparms.pdf" target="_blank">images/sp6.1196.a_sp6.1197.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1199.a_sp6.1198.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1199.a_sp6.1198.b_trace.pdf" target="_blank">images/sp6.1199.a_sp6.1198.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1199.a_sp6.1198.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1199.a_sp6.1198.b_apertureparms.pdf" target="_blank">images/sp6.1199.a_sp6.1198.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1200.a_sp6.1201.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1200.a_sp6.1201.b_trace.pdf" target="_blank">images/sp6.1200.a_sp6.1201.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1200.a_sp6.1201.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1200.a_sp6.1201.b_apertureparms.pdf" target="_blank">images/sp6.1200.a_sp6.1201.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1203.a_sp6.1202.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1203.a_sp6.1202.b_trace.pdf" target="_blank">images/sp6.1203.a_sp6.1202.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1203.a_sp6.1202.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1203.a_sp6.1202.b_apertureparms.pdf" target="_blank">images/sp6.1203.a_sp6.1202.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1204.a_sp6.1205.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1204.a_sp6.1205.b_trace.pdf" target="_blank">images/sp6.1204.a_sp6.1205.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1204.a_sp6.1205.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1204.a_sp6.1205.b_apertureparms.pdf" target="_blank">images/sp6.1204.a_sp6.1205.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1206.a_sp6.1207.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1206.a_sp6.1207.b_trace.pdf" target="_blank">images/sp6.1206.a_sp6.1207.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1206.a_sp6.1207.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1206.a_sp6.1207.b_apertureparms.pdf" target="_blank">images/sp6.1206.a_sp6.1207.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1209.a_sp6.1208.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1209.a_sp6.1208.b_trace.pdf" target="_blank">images/sp6.1209.a_sp6.1208.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1209.a_sp6.1208.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1209.a_sp6.1208.b_apertureparms.pdf" target="_blank">images/sp6.1209.a_sp6.1208.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+<h4>Calibrators</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/sp6.1172.a_sp6.1173.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1172.a_sp6.1173.b_trace.pdf" target="_blank">images/sp6.1172.a_sp6.1173.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1172.a_sp6.1173.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1172.a_sp6.1173.b_apertureparms.pdf" target="_blank">images/sp6.1172.a_sp6.1173.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1175.a_sp6.1174.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1175.a_sp6.1174.b_trace.pdf" target="_blank">images/sp6.1175.a_sp6.1174.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1175.a_sp6.1174.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1175.a_sp6.1174.b_apertureparms.pdf" target="_blank">images/sp6.1175.a_sp6.1174.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1176.a_sp6.1177.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1176.a_sp6.1177.b_trace.pdf" target="_blank">images/sp6.1176.a_sp6.1177.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1176.a_sp6.1177.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1176.a_sp6.1177.b_apertureparms.pdf" target="_blank">images/sp6.1176.a_sp6.1177.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+ </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1179.a_sp6.1178.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1179.a_sp6.1178.b_trace.pdf" target="_blank">images/sp6.1179.a_sp6.1178.b_trace.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1179.a_sp6.1178.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1179.a_sp6.1178.b_apertureparms.pdf" target="_blank">images/sp6.1179.a_sp6.1178.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td>   <td align="center">
+    <embed src="images/sp6.1180.a_sp6.1181.b_trace.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1180.a_sp6.1181.b_trace.pdf" target="_blank">images/sp6.1180.a_sp6.1181.b_trace.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/sp6.1180.a_sp6.1181.b_apertureparms.pdf" width=300 height=300></a>
+    <br>[<a href="images/sp6.1180.a_sp6.1181.b_apertureparms.pdf" target="_blank">images/sp6.1180.a_sp6.1181.b_apertureparms.pdf</a>]
+    <br>[FITS]
+  </td> </tr>
+</table>
+
+
+</div>
+
+<!--
+</div>
+-->
+<hr>
+
+
+
+<!-- CALIBRATIONS -->
+
+
+<h2>Calibrations</h2>
+
+
+
+<button type="button" class="collapsible">Flats</button>
+<div class="content">
+
+<table>
+ <tr>
+ </tr>
+</table>
+
+
+
+</div>
+
+<hr>
+
+<button type="button" class="collapsible">Wavelength Calibration</button>
+<div class="content">
+
+<table>
+ <tr>
+ </tr>
+</table>
+
+
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

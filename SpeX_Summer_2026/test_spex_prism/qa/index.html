@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="webpage for reviewing archival spectral reductions.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>pyspextool QA review for spex on 2003-05-21</title>
+  <link rel="stylesheet" type="text/css" href="qa.css">
+
+<!--  
+  <link rel="stylesheet" href="https://aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.css" />
+-->
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js" charset="utf-8"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+</head>
+
+<body>
+<h1 id="top">pyspextool QA review for spex on 2003-05-21</h1>
+
+<h2 id="info">Observing information</h2>
+
+<ul>
+ <li>UT Date: 2003-05-21
+ <li>Program: 2003A013
+ <li>Observer(s): Burgasser
+ <li>Instrument mode(s): Prism
+<!-- <li>Data directory: <a href="test_spex_prism/data" target="_blank">test_spex_prism/data</a>
+ <li>Processed files directory: <a href="test_spex_prism/proc/" target="_blank">test_spex_prism/proc/</a>
+-->  
+ <li><a href="log_test_spex_prism.html" target="_blank">Observing Log</a>
+ <li><a href="http://mkwc.ifa.hawaii.edu/forecast/mko/archive/index.cgi" target="_blank">Mauna Kea Weather Record</a>
+</ul>
+
+<h2 id="info">Sources</h2>
+
+<!-- repeat per source -->
+
+<!-- SOURCE TEMPLATE -->
+
+<!--
+<button type="button" class="collapsible">1104+1959 Prism</button>
+<div class="content">
+-->
+
+<h3>1104+1959 (Prism mode)</h3>
+
+<!-- CALIBRATED SPECTRUM -->
+
+<h4>Reduced Spectrum and Source Information</h4>
+
+<table>
+ <tr>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spex-prism_1104+1959_20030521_2003A013_1-8.png" width=300 height=300></a>
+    <br>[<a href="images/spex-prism_1104+1959_20030521_2003A013_1-8.png" target="_blank">spex-prism_1104+1959_20030521_2003A013_1-8.png</a>]
+    <br>[<a href="spectra/spex-prism_1104+1959_20030521_2003A013_1-8.fits" download="spex-prism_1104+1959_20030521_2003A013_1-8.fits">spex-prism_1104+1959_20030521_2003A013_1-8.fits</a>]
+    <br>[<a href="spectra/spex-prism_1104+1959_20030521_2003A013_1-8.csv" download="spex-prism_1104+1959_20030521_2003A013_1-8.csv">spex-prism_1104+1959_20030521_2003A013_1-8.csv</a>]
+  </td>
+
+<!-- temporarily remove
+
+    <script>
+        // Get the dimensions of the viewport
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+        const margin = { top: 200, right: 200, bottom: 200, left: 200 }; // Increased margins for buffer space
+
+        // Create SVG container
+        const svg = d3.select("body")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        const container = svg.append("g"); // Group for all elements
+
+        // Tooltip for displaying coordinates
+        const tooltip = d3.select("body")
+            .append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
+        // Load the CSV data
+        d3.csv("[SPECTRUM CSV").then(function(data) {
+            // Assuming the CSV has columns "x" and "y"
+            data.forEach(d => {
+                d.wave = +d.wave; // Convert x to number
+                d.flux = +d.flux; // Convert y to number
+                d.unc = +d.unc; // Convert y to number
+            });
+
+            // Scales
+            const xScale = d3.scaleLinear()
+                .domain(d3.extent(data, d => d.wave))
+                .range([margin.left, width - margin.right]);
+
+            const yScale = d3.scaleLinear()
+                .domain(d3.extent(data, d => d.flux))
+                .range([height - margin.bottom, margin.top]);
+
+            // Axes
+            const xAxis = d3.axisBottom(xScale);
+            const yAxis = d3.axisLeft(yScale);
+
+            // Append axes to container
+            const xAxisGroup = container.append("g")
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .attr("class", "x-axis")
+                .call(xAxis);
+
+            const yAxisGroup = container.append("g")
+                .attr("transform", `translate(${margin.left},0)`)
+                .attr("class", "y-axis")
+                .call(yAxis);
+
+            // Line generator
+            const line = d3.line()
+                .wave(d => xScale(d.wave))
+                .flux(d => yScale(d.flux))
+                .curve(d3.curveMonotoneX); // Smooth curve
+
+            // Add line path to container
+            const linePath = container.append("path")
+                .datum(data)
+                .attr("fill", "none")
+                .attr("stroke", "steelblue")
+                .attr("stroke-width", 2)
+                .attr("d", line);
+
+            // Add circles for data points with hover interaction
+            const circles = container.selectAll("circle")
+                .data(data)
+                .enter()
+                .append("circle")
+                .attr("cx", d => xScale(d.wave))
+                .attr("cy", d => yScale(d.flux))
+                .attr("r", 4)
+                .style("fill", "steelblue")
+                .style("opacity", 0.7)
+                .on("mouseover", (event, d) => {
+                    tooltip.transition().duration(200).style("opacity", 1);
+                    tooltip.html(`x: ${d.wave.toFixed(2)}, y: ${d.flux.toFixed(2)}`)
+                        .style("left", `${event.pageX + 10}px`)
+                        .style("top", `${event.pageY - 20}px`);
+                })
+                .on("mouseout", () => {
+                    tooltip.transition().duration(500).style("opacity", 0);
+                });
+
+            // Create the clipping path
+            const clipPath = svg.append("defs")
+                .append("clipPath")
+                .attr("id", "clip")
+                .append("rect")
+                .attr("x", margin.left)
+                .attr("y", margin.top)
+                .attr("width", width - margin.left - margin.right)
+                .attr("height", height - margin.top - margin.bottom);
+
+            // Zooming behavior
+            const zoom = d3.zoom()
+                .extent([[margin.left, margin.top], [width - margin.right, height - margin.bottom]])
+                .scaleExtent([1, 10]) // Constrain zooming scale between 1x and 10x
+                .translateExtent([
+                    [margin.left, margin.top], 
+                    [width - margin.right, height - margin.bottom]
+                ]) // Constrain panning within the bounds of the SVG container
+                .on("zoom", (event) => {
+                    const transform = event.transform;
+                    const newXScale = transform.rescaleX(xScale);
+                    const newYScale = transform.rescaleY(yScale);
+
+                    // Get the extent of the data (to prevent the graph from exceeding the axes)
+                    const xDomain = newXScale.domain();
+                    const yDomain = newYScale.domain();
+
+                    // Prevent the graph from going beyond the axes limits
+                    const xMin = Math.max(xDomain[0], xScale.domain()[0]);
+                    const xMax = Math.min(xDomain[1], xScale.domain()[1]);
+
+                    const yMin = Math.max(yDomain[0], yScale.domain()[0]);
+                    const yMax = Math.min(yDomain[1], yScale.domain()[1]);
+
+                    // Update the scales to ensure they don't extend beyond the axes
+                    newXScale.domain([xMin, xMax]);
+                    newYScale.domain([yMin, yMax]);
+
+                    // Update scales for axes
+                    xAxisGroup.call(xAxis.scale(newXScale));
+                    yAxisGroup.call(yAxis.scale(newYScale));
+
+                    // Update line path
+                    linePath.attr("d", line.wave(d => newXScale(d.wave)).flux(d => newYScale(d.flux)));
+
+                    // Update circles
+                    circles
+                        .attr("cx", d => newXScale(d.wave))
+                        .attr("cy", d => newYScale(d.flux));
+
+                    // Apply clip-path only to the graph elements (line and circles)
+                    linePath.attr("clip-path", "url(#clip)");
+                    circles.attr("clip-path", "url(#clip)");
+                });
+
+            // Apply zooming behavior to the SVG container
+            svg.call(zoom);
+
+            // Resize SVG when the window is resized
+            window.addEventListener("resize", () => {
+                const newWidth = window.innerWidth;
+                const newHeight = window.innerHeight;
+
+                d3.select("svg")
+                    .attr("width", newWidth)
+                    .attr("height", newHeight);
+
+                xScale.range([margin.left, newWidth - margin.right]);
+                yScale.range([newHeight - margin.bottom, margin.top]);
+
+                // Update the axes with the new scales
+                xAxisGroup
+                    .attr("transform", `translate(0,${newHeight - margin.bottom})`)
+                    .call(xAxis.scale(xScale));
+
+                yAxisGroup.call(yAxis.scale(yScale));
+
+                // Update line path
+                linePath.attr("d", line.wave(d => xScale(d.wave)).flux(d => yScale(d.flux)));
+
+                // Update circles
+                circles
+                    .attr("cx", d => xScale(d.wave))
+                    .attr("cy", d => yScale(d.flux));
+            });
+        }).catch(function(error) {
+            console.error("Error loading the CSV file: ", error);
+        });
+    </script>
+
+-->
+    
+  <td align="left">
+   <ul>
+    <li>Source Name: 1104+1959 (fixed-ps) 
+    <li>Coordinate: 11:04:01.12 +19:59:22.1 [<a href="https://aladin.cds.unistra.fr/AladinLite/?target=J11040112%2B1959221&fov=0.12&survey=CDS%2FP%2F2MASS%2Fcolor" target="_blank">Aladin</a>] [<a href="https://simbad.cds.unistra.fr/simbad/sim-coo?Coord=J11040112%2B1959221&CooFrame=FK5&CooEpoch=2000&CooEqui=2000&CooDefinedFrames=none&Radius=2&Radius.unit=arcmin&submit=submit+query&CoordList=" target="_blank">SIMBAD</a>]
+    <li>Standard: hd 101060 (A1V) [<a href="https://simbad.u-strasbg.fr/simbad/sim-id?Ident=hd++101060&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" target="_blank">SIMBAD</a>]
+    <li>Target Airmass: 1.00
+    <li>Standard Airmass: 1.00
+    <li>Delta Airmass: 0.00
+    <li>Delta Angle: 9.11 deg
+    <li>UT time: 05:46:06 to 06:02:40
+    <li>Total Integration: 960.0 sec
+    <li>Mode: Prism
+    <li>Slit: 0.5x15
+    <li>Files: Target 1-8, Standard 9-14
+   </ul>
+  </td>
+ </tr>
+</table>
+
+
+<!-- INDIVIDUAL SOURCE SPECTRA -->
+
+<button type="button" class="collapsible">Target Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec1-8_scaled.png" width=300 height=300></a>
+    <br>[<a href="images/combspec1-8_scaled.png" target="_blank">combspec1-8_scaled.png</a>]
+    <br>
+    <br>
+  </td>   <td align="center">
+    <embed src="images/combspec1-8.png" width=300 height=300></a>
+    <br>[<a href="images/combspec1-8.png" target="_blank">combspec1-8.png</a>]
+    <br>
+    <br>
+  </td>   <td align="center">
+    <embed src="images/calspec1-8_shifts.png" width=300 height=300></a>
+    <br>[<a href="images/calspec1-8_shifts.png" target="_blank">calspec1-8_shifts.png</a>]
+    <br>
+    <br>
+  </td> </tr>
+</table>
+
+
+<h4>Individual Extracted Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra0001.png" width=300 height=300></a>
+    <br>[<a href="images/spectra0001.png" target="_blank">spectra0001.png</a>]
+    <br>
+    <br>
+  </td>   <td align="center">
+    <embed src="images/spectra0002.png" width=300 height=300></a>
+    <br>[<a href="images/spectra0002.png" target="_blank">spectra0002.png</a>]
+    <br>
+    <br>
+  </td>   <td align="center">
+    <embed src="images/spectra0003.png" width=300 height=300></a>
+    <br>[<a href="images/spectra0003.png" target="_blank">spectra0003.png</a>]
+    <br>
+    <br>
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra0004.png" width=300 height=300></a>
+    <br>[<a href="images/spectra0004.png" target="_blank">spectra0004.png</a>]
+    <br>
+    <br>
+  </td>   <td align="center">
+    <embed src="images/spectra0005.png" width=300 height=300></a>
+    <br>[<a href="images/spectra0005.png" target="_blank">spectra0005.png</a>]
+    <br>
+    <br>
+  </td>   <td align="center">
+    <embed src="images/spectra0006.png" width=300 height=300></a>
+    <br>[<a href="images/spectra0006.png" target="_blank">spectra0006.png</a>]
+    <br>
+    <br>
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra0007.png" width=300 height=300></a>
+    <br>[<a href="images/spectra0007.png" target="_blank">spectra0007.png</a>]
+    <br>
+    <br>
+  </td>   <td align="center">
+    <embed src="images/spectra0008.png" width=300 height=300></a>
+    <br>[<a href="images/spectra0008.png" target="_blank">spectra0008.png</a>]
+    <br>
+    <br>
+  </td> </tr>
+</table>
+
+
+<h4>Individual Calibrated Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/calspec0001.png" width=300 height=300></a>
+    <br>[<a href="images/calspec0001.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[<a href="spectra/calspec0001.fits" download="calspec0001.fits">calspec0001.fits</a>]
+    <br>
+  </td>   <td align="center">
+    <embed src="images/calspec0002.png" width=300 height=300></a>
+    <br>[<a href="images/calspec0002.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[<a href="spectra/calspec0002.fits" download="calspec0002.fits">calspec0002.fits</a>]
+    <br>
+  </td>   <td align="center">
+    <embed src="images/calspec0003.png" width=300 height=300></a>
+    <br>[<a href="images/calspec0003.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[<a href="spectra/calspec0003.fits" download="calspec0003.fits">calspec0003.fits</a>]
+    <br>
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/calspec0004.png" width=300 height=300></a>
+    <br>[<a href="images/calspec0004.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[<a href="spectra/calspec0004.fits" download="calspec0004.fits">calspec0004.fits</a>]
+    <br>
+  </td>   <td align="center">
+    <embed src="images/calspec0005.png" width=300 height=300></a>
+    <br>[<a href="images/calspec0005.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[<a href="spectra/calspec0005.fits" download="calspec0005.fits">calspec0005.fits</a>]
+    <br>
+  </td>   <td align="center">
+    <embed src="images/calspec0006.png" width=300 height=300></a>
+    <br>[<a href="images/calspec0006.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[<a href="spectra/calspec0006.fits" download="calspec0006.fits">calspec0006.fits</a>]
+    <br>
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/calspec0007.png" width=300 height=300></a>
+    <br>[<a href="images/calspec0007.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[<a href="spectra/calspec0007.fits" download="calspec0007.fits">calspec0007.fits</a>]
+    <br>
+  </td>   <td align="center">
+    <embed src="images/calspec0008.png" width=300 height=300></a>
+    <br>[<a href="images/calspec0008.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[<a href="spectra/calspec0008.fits" download="calspec0008.fits">calspec0008.fits</a>]
+    <br>
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- INDIVIDUAL STANDARD SPECTRA -->
+
+<button type="button" class="collapsible">Calibrator Spectra</button>
+<div class="content">
+
+<h4>Combined Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/combspec9-14_scaled.png" width=300 height=300></a>
+    <br>[<a href="images/combspec9-14_scaled.png" target="_blank">combspec9-14_scaled.png</a>]
+    <br>
+    <br>
+  </td>   <td align="center">
+    <embed src="images/combspec9-14.png" width=300 height=300></a>
+    <br>[<a href="images/combspec9-14.png" target="_blank">combspec9-14.png</a>]
+    <br>
+    <br>
+  </td> </tr>
+</table>
+
+
+
+<h4>Individual Extracted Spectra</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spectra0009.png" width=300 height=300></a>
+    <br>[<a href="images/spectra0009.png" target="_blank">spectra0009.png</a>]
+    <br>
+    <br>
+  </td>   <td align="center">
+    <embed src="images/spectra0010.png" width=300 height=300></a>
+    <br>[<a href="images/spectra0010.png" target="_blank">spectra0010.png</a>]
+    <br>
+    <br>
+  </td>   <td align="center">
+    <embed src="images/spectra0011.png" width=300 height=300></a>
+    <br>[<a href="images/spectra0011.png" target="_blank">spectra0011.png</a>]
+    <br>
+    <br>
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spectra0012.png" width=300 height=300></a>
+    <br>[<a href="images/spectra0012.png" target="_blank">spectra0012.png</a>]
+    <br>
+    <br>
+  </td>   <td align="center">
+    <embed src="images/spectra0013.png" width=300 height=300></a>
+    <br>[<a href="images/spectra0013.png" target="_blank">spectra0013.png</a>]
+    <br>
+    <br>
+  </td>   <td align="center">
+    <embed src="images/spectra0014.png" width=300 height=300></a>
+    <br>[<a href="images/spectra0014.png" target="_blank">spectra0014.png</a>]
+    <br>
+    <br>
+  </td> </tr>
+</table>
+
+
+<h4>Telluric Correction</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/calspec1-8_shifts.png" width=300 height=300></a>
+    <br>[<a href="images/calspec1-8_shifts.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[FITS]
+    <br>[CSV]
+  </td> </tr>
+</table>
+
+
+</div>
+
+
+<!-- TRACES & APERTURE PARAMETERS -->
+
+<button type="button" class="collapsible">Traces and Apertures</button>
+<div class="content">
+
+<h4>Targets</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spc0001.a_spc0002.b_trace.png" width=300 height=300></a>
+    <br>[<a href="images/spc0001.a_spc0002.b_trace.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[FITS]
+    <br>[CSV]
+  </td>   <td align="center">
+    <embed src="images/spc0001.a_spc0002.b_profiles.png" width=300 height=300></a>
+    <br>[<a href="images/spc0001.a_spc0002.b_profiles.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[FITS]
+    <br>[CSV]
+  </td>   <td align="center">
+    <embed src="images/spc0004.a_spc0003.b_trace.png" width=300 height=300></a>
+    <br>[<a href="images/spc0004.a_spc0003.b_trace.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[FITS]
+    <br>[CSV]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spc0004.a_spc0003.b_profiles.png" width=300 height=300></a>
+    <br>[<a href="images/spc0004.a_spc0003.b_profiles.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[FITS]
+    <br>[CSV]
+  </td>   <td align="center">
+    <embed src="images/spc0005.a_spc0006.b_trace.png" width=300 height=300></a>
+    <br>[<a href="images/spc0005.a_spc0006.b_trace.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[FITS]
+    <br>[CSV]
+  </td>   <td align="center">
+    <embed src="images/spc0005.a_spc0006.b_profiles.png" width=300 height=300></a>
+    <br>[<a href="images/spc0005.a_spc0006.b_profiles.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[FITS]
+    <br>[CSV]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spc0007.a_spc0008.b_trace.png" width=300 height=300></a>
+    <br>[<a href="images/spc0007.a_spc0008.b_trace.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[FITS]
+    <br>[CSV]
+  </td>   <td align="center">
+    <embed src="images/spc0007.a_spc0008.b_profiles.png" width=300 height=300></a>
+    <br>[<a href="images/spc0007.a_spc0008.b_profiles.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[FITS]
+    <br>[CSV]
+  </td> </tr>
+</table>
+
+
+<h4>Calibrators</h4>
+
+<table width=100%>
+ <tr>
+   <td align="center">
+    <embed src="images/spc0009.a_spc0010.b_trace.png" width=300 height=300></a>
+    <br>[<a href="images/spc0009.a_spc0010.b_trace.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[FITS]
+    <br>[CSV]
+  </td>   <td align="center">
+    <embed src="images/spc0009.a_spc0010.b_profiles.png" width=300 height=300></a>
+    <br>[<a href="images/spc0009.a_spc0010.b_profiles.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[FITS]
+    <br>[CSV]
+  </td>   <td align="center">
+    <embed src="images/spc0012.a_spc0011.b_trace.png" width=300 height=300></a>
+    <br>[<a href="images/spc0012.a_spc0011.b_trace.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[FITS]
+    <br>[CSV]
+  </td> </tr>
+ <tr> 
+   <td align="center">
+    <embed src="images/spc0012.a_spc0011.b_profiles.png" width=300 height=300></a>
+    <br>[<a href="images/spc0012.a_spc0011.b_profiles.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[FITS]
+    <br>[CSV]
+  </td>   <td align="center">
+    <embed src="images/spc0013.a_spc0014.b_trace.png" width=300 height=300></a>
+    <br>[<a href="images/spc0013.a_spc0014.b_trace.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[FITS]
+    <br>[CSV]
+  </td>   <td align="center">
+    <embed src="images/spc0013.a_spc0014.b_profiles.png" width=300 height=300></a>
+    <br>[<a href="images/spc0013.a_spc0014.b_profiles.png" target="_blank">[IMAGE_NAME]</a>]
+    <br>[FITS]
+    <br>[CSV]
+  </td> </tr>
+ <tr> 
+ </tr>
+</table>
+
+
+</div>
+
+<!--
+</div>
+-->
+<hr>
+
+
+
+<!-- CALIBRATIONS -->
+
+
+<h2>Calibrations</h2>
+
+
+
+<button type="button" class="collapsible">Flats</button>
+<div class="content">
+
+<table>
+ <tr>
+  <td align="center">
+   <img src="images/flat15-20_locateorders.png" width=300>
+   <br>flat15-20_locateorders.png
+   </td>
+  <td align="center">
+   <img src="images/flat15-20_normalized.png" width=300>
+   <br>flat15-20_normalized.png
+   </td>
+ </tr>
+</table>
+
+
+
+</div>
+
+<hr>
+
+<button type="button" class="collapsible">Wavelength Calibration</button>
+<div class="content">
+
+<table>
+ <tr>
+  <td align="center">
+   <embed src="images/wavecal15-20_pixelshift.png" width=300 height=300>
+   <br>images/wavecal15-20_pixelshift.png
+   </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

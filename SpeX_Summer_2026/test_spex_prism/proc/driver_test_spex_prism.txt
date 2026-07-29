@@ -1,0 +1,37 @@
+# pyspextool batch reduction driver file for spex observations on 2003-05-21
+# Code version 2026 May 29
+
+# Observational information
+INSTRUMENT = spex
+UT_DATE = 2003-05-21
+PROGRAM = 2003A013
+OBSERVER = Burgasser
+
+# Folders and files
+DATA_FOLDER = test_spex_prism/data
+CALS_FOLDER = test_spex_prism/cals/
+PROC_FOLDER = test_spex_prism/proc/
+QA_FOLDER = test_spex_prism/qa/
+SCIENCE_FILE_PREFIX = spc
+SPECTRA_FILE_PREFIX = spectra
+COMBINED_FILE_PREFIX = combspec
+TELLURIC_FILE_PREFIX = telluric
+CALIBRATED_FILE_PREFIX = calspec
+MERGED_FILE_PREFIX = merged-orders
+
+# Science observations
+#	Mode	Target Type	Target Sub	Target Name	Target Prefix	Target Files	Target Flat	Target Wavecal	Std Sub	Std Name	Std SpT	Std B	Std V	Std Prefix	Std Files	Std Flat	Std Wavecal	Options (key=value)
+OBS_SET	Prism	fixed-ps	A-B	1104+1959	spc	1-8	flat15-20.fits	wavecal15-20.fits	A-B	hd 101060	A1V	8.770000457763672	8.779999732971191	spc	9-14	flat15-20.fits	wavecal15-20.fits
+#
+
+# Lamp calibrations
+FLAT_FILE_PREFIX = flat
+ARC_FILE_PREFIX = arc
+CAL_SETS = 15-20
+
+# Notes
+# 
+# 
+# 
+# 
+# 

@@ -1,0 +1,36 @@
+# pyspextool batch reduction driver file for spex observations on 2001/9/24
+# Code version 2024 May 24
+
+# Observational information
+INSTRUMENT = spex
+UT_DATE = 2001/9/24
+PROGRAM = 2001B099
+OBSERVER = Sheppard
+
+# Folders and files
+DATA_FOLDER = ./data
+CALS_FOLDER = .\cals
+PROC_FOLDER = .\proc
+QA_FOLDER = .\qa
+SCIENCE_FILE_PREFIX = nt4
+SPECTRA_FILE_PREFIX = spectra
+COMBINED_FILE_PREFIX = combspec
+CALIBRATED_FILE_PREFIX = calspec
+STITCHED_FILE_PREFIX = stitched
+
+# Science observations
+#	Mode	Target Type	Target Sub	Target Name	Target Prefix	Target Files	Target Flat	Target Wavecal	Std Sub	Std Name	Std SpT	Std B	Std V	Std Prefix	Std Files	Std Flat	Std Wavecal	Options (key=value)
+OBS_SET	Prism	moving-ps	A-B	2001 NX17	nt4	474-479,482-483,496-505	flat490-495.fits	wavecal490-495.fits	A-B	HD 184509	F8.5V	7.27	6.74	nt4	462-467	flat468-473.fits	wavecal468-473.fits
+OBS_SET	Prism	fixed-ps	A-B	1989 TS1	nt4	599-608	flat593-598.fits	wavecal593-598.fits	A-B	HD 8262	G2V	7.58	0.0	nt4	575-580,587-592	flat593-598.fits	wavecal593-598.fits
+
+# Lamp calibrations
+FLAT_FILE_PREFIX = flat
+ARC_FILE_PREFIX = arc
+CAL_SETS = 456-461,468-473,490-495,512-517,524-529,543-548,569-574,581-586,593-598
+
+# Notes
+# 480-481 was skipped for bad images
+# 615 ignored to maintain even number of files
+# 609-614 skipped for bad images and code cannot generate a spectra for these files
+# 
+# 

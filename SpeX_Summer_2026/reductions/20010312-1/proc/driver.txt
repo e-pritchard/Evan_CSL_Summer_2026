@@ -1,0 +1,36 @@
+# pyspextool batch reduction driver file for spex observations on 2001-03-12
+# Code version 2024 Feb 25
+
+# Observational information
+INSTRUMENT = spex
+UT_DATE = 2001-03-12
+PROGRAM = 2001A062
+OBSERVER = Cushing
+
+# Folders and files
+DATA_FOLDER = ./data
+CALS_FOLDER = ./cals
+PROC_FOLDER = ./proc
+QA_FOLDER = ./qa
+SCIENCE_FILE_PREFIX = spec
+SPECTRA_FILE_PREFIX = spectra
+COMBINED_FILE_PREFIX = combspec
+CALIBRATED_FILE_PREFIX = calspec
+STITCHED_FILE_PREFIX = stitched
+
+# Science observations
+#	Mode	Target Type	Target Sub	Target Name	Target Prefix	Target Files	Target Flat	Target Wavecal	Std Sub	Std Name	Std Prefix	Std Files	Std Flat	Std Wavecal	Options (key=value)
+OBS_SET	Prism	moving-ps	A-B	1998 SF36	spec	21-40,67-86,138-147	flat41-48.fits	wavecal41-48.fits	A-B	SAO100569	spec	61-66,99-104	flat105-112.fits	wavecal105-112.fits
+OBS_SET	Prism	moving-ps	A-B	4159 Freeman	spec	198-211	flat212-219.fits	wavecal212-219.fits	A-B	SAO100819	spec	11-20,55-60,93-98,113-130,132-137,162-173,230-249	flat148-155.fits	wavecal148-155.fits
+
+# Lamp calibrations
+FLAT_FILE_PREFIX = flat
+ARC_FILE_PREFIX = arc
+CAL_SETS = 41-48,105-112,148-155,190-197,212-219,270-277
+
+# Notes
+# Removed 131 (Odd number error)
+# Appears to be some saturation occurring in 1.4-1.75 micro-m wavelength for a few extractions
+# 
+# 
+# 

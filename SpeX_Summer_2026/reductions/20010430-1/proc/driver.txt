@@ -1,0 +1,37 @@
+# pyspextool batch reduction driver file for spex observations on 2001-04-30
+# Code version 2024 Apr 25
+
+# Observational information
+INSTRUMENT = spex
+UT_DATE = 2001-04-30
+PROGRAM = 2001A014
+OBSERVER = Hardersen
+
+# Folders and files
+DATA_FOLDER = ./data
+CALS_FOLDER = .\cals
+PROC_FOLDER = .\proc
+QA_FOLDER = .\qa
+SCIENCE_FILE_PREFIX = spec
+SPECTRA_FILE_PREFIX = spectra
+COMBINED_FILE_PREFIX = combspec
+CALIBRATED_FILE_PREFIX = calspec
+STITCHED_FILE_PREFIX = stitched
+
+# Science observations
+#	Mode	Target Type	Target Sub	Target Name	Target Prefix	Target Files	Target Flat	Target Wavecal	Std Sub	Std Name	Std Prefix	Std Files	Std Flat	Std Wavecal	Options (key=value)
+OBS_SET	Prism	moving-ps	A-B	216 Kleopatra	spec	19-32	flat43-48.fits	wavecal43-48.fits	A-B	SAO 138119	spec	9-18	flat43-48.fits	wavecal43-48.fits
+OBS_SET	Prism	moving-ps	A-B	216 Kleopatra	spec	59-66	flat43-48.fits	wavecal43-48.fits	A-B	SAO 138119	spec	33-42	flat43-48.fits	wavecal43-48.fits
+
+
+# Lamp calibrations
+FLAT_FILE_PREFIX = flat
+ARC_FILE_PREFIX = arc
+CAL_SETS = 3-8,43-48,67-130
+
+# Notes
+# Separated into two targets because this is a moving asteroid that rotates as well.
+# Changed target type to moving.
+# Had to delete the original combspec and calspec fits and image files because forgot to change to moving. Then running again regenerated them after changing target type to moving.
+# 
+# 

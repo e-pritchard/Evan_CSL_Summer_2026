@@ -1,0 +1,46 @@
+# pyspextool batch reduction driver file for spex observations on 2001/8/24
+# Code version 2024 May 24
+
+# Observational information
+INSTRUMENT = spex
+UT_DATE = 2001/8/24
+PROGRAM = 2001B028
+OBSERVER = Binzel
+
+# Folders and files
+DATA_FOLDER = ./data
+CALS_FOLDER = .\cals
+PROC_FOLDER = .\proc
+QA_FOLDER = .\qa
+SCIENCE_FILE_PREFIX = sp8.
+SPECTRA_FILE_PREFIX = spectra
+COMBINED_FILE_PREFIX = combspec
+CALIBRATED_FILE_PREFIX = calspec
+STITCHED_FILE_PREFIX = stitched
+
+# Science observations
+#	Mode	Target Type	Target Sub	Target Name	Target Prefix	Target Files	Target Flat	Target Wavecal	Std Sub	Std Name	Std SpT	Std B	Std V	Std Prefix	Std Files	Std Flat	Std Wavecal	Options (key=value)
+OBS_SET	Prism	moving-ps	A-B	258	sp8.	2017-2030	flat2011-2016.fits	wavecal2011-2016.fits	A-B	land_ 112-1333	F8	10.63	9.9	sp8.	2063-2072	flat2073-2078.fits	wavecal2073-2078.fits
+OBS_SET	Prism	moving-ps	A-B	2001 MF1	sp8.	2031-2048	flat2011-2016.fits	wavecal2011-2016.fits	A-B	land_ 112-1333	F8	10.63	9.9	sp8.	2063-2072	flat2073-2078.fits	wavecal2073-2078.fits
+OBS_SET	Prism	moving-ps	A-B	26	sp8.	2049-2062	flat2073-2078.fits	wavecal2073-2078.fits	A-B	land_ 112-1333	F8	10.63	9.9	sp8.	2063-2072	flat2073-2078.fits	wavecal2073-2078.fits
+OBS_SET	Prism	moving-ps	A-B	3949	sp8.	2079-2094	flat2073-2078.fits	wavecal2073-2078.fits	A-B	land_ 112-1333	F8	10.63	9.9	sp8.	2063-2072	flat2073-2078.fits	wavecal2073-2078.fits
+OBS_SET	Prism	moving-ps	A-B	5840	sp8.	2095-2108	flat2073-2078.fits	wavecal2073-2078.fits	A-B	land_ 115-271	F8	10.305	9.693	sp8.	2145-2154	flat2155-2160.fits	wavecal2155-2160.fits
+OBS_SET	Prism	moving-ps	A-B	10	sp8.	2109-2118	flat2073-2078.fits	wavecal2073-2078.fits	A-B	land_ 115-271	F8	10.305	9.693	sp8.	2145-2154	flat2155-2160.fits	wavecal2155-2160.fits
+OBS_SET	Prism	moving-ps	A-B	4407	sp8.	2119-2134	flat2155-2160.fits	wavecal2155-2160.fits	A-B	land_ 115-271	F8	10.305	9.693	sp8.	2145-2154	flat2155-2160.fits	wavecal2155-2160.fits
+OBS_SET	Prism	moving-ps	A-B	389	sp8.	2135-2144	flat2155-2160.fits	wavecal2155-2160.fits	A-B	land_ 115-271	F8	10.305	9.693	sp8.	2145-2154	flat2155-2160.fits	wavecal2155-2160.fits
+OBS_SET	Prism	moving-ps	A-B	2851	sp8.	2161-2174	flat2155-2160.fits	wavecal2155-2160.fits	A-B	land_ 115-271	F8	10.305	9.693	sp8.	2145-2154	flat2155-2160.fits	wavecal2155-2160.fits
+OBS_SET	Prism	moving-ps	A-B	82	sp8.	2175-2184	flat2155-2160.fits	wavecal2155-2160.fits	A-B	land_ 115-271	F8	10.305	9.693	sp8.	2145-2154	flat2155-2160.fits	wavecal2155-2160.fits
+OBS_SET	Prism	moving-ps	A-B	3734	sp8.	2185-2200	flat2155-2160.fits	wavecal2155-2160.fits	A-B	land_ 115-271	F8	10.305	9.693	sp8.	2145-2154	flat2155-2160.fits	wavecal2155-2160.fits
+OBS_SET	Prism	moving-ps	A-B	716	sp8.	2201-2222	flat2233-2238.fits	wavecal2233-2238.fits	A-B	land_ 115-271	F8	10.305	9.693	sp8.	2145-2154	flat2155-2160.fits	wavecal2155-2160.fits
+
+# Lamp calibrations
+FLAT_FILE_PREFIX = flat
+ARC_FILE_PREFIX = arc
+CAL_SETS = 2011-2016,2073-2078,2155-2160,2233-2238
+
+# Notes
+# 
+# 
+# 
+# 
+# 

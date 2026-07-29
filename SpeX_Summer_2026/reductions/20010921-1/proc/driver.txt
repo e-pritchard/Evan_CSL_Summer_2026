@@ -1,0 +1,41 @@
+# pyspextool batch reduction driver file for spex observations on 2001/9/21
+# Code version 2024 May 24
+
+# Observational information
+INSTRUMENT = spex
+UT_DATE = 2001/9/21
+PROGRAM = 2001B099
+OBSERVER = Sheppard
+
+# Folders and files
+DATA_FOLDER = ./data
+CALS_FOLDER = .\cals
+PROC_FOLDER = .\proc
+QA_FOLDER = .\qa
+SCIENCE_FILE_PREFIX = nt1
+SPECTRA_FILE_PREFIX = spectra
+COMBINED_FILE_PREFIX = combspec
+CALIBRATED_FILE_PREFIX = calspec
+STITCHED_FILE_PREFIX = stitched
+
+# Science observations
+#	Mode	Target Type	Target Sub	Target Name	Target Prefix	Target Files	Target Flat	Target Wavecal	Std Sub	Std Name	Std SpT	Std B	Std V	Std Prefix	Std Files	Std Flat	Std Wavecal	Options (key=value)
+OBS_SET	Prism	fixed-ps	A-B	HD214558	nt1	13-18,45-50	flat19-24.fits	wavecal19-24.fits	A-B	HD225239	G3	6.74	6.11	nt1	77-82	flat83-88.fits	wavecal83-88.fits
+OBS_SET	Prism	moving-ps	A-B	2001KX67	nt1	25-30,33-44	flat51-56.fits	wavecal51-56.fits	A-B	HD186427	G3V	6.86	6.2	nt1	1-6	flat7-12.fits	wavecal7-12.fits
+OBS_SET	Prism	moving-ps	A-B	1999 NV27	nt1	57-76	flat51-56.fits	wavecal51-56.fits	A-B	HD225239	G3	6.74	6.11	nt1	77-82	flat83-88.fits	wavecal83-88.fits
+OBS_SET	Prism	moving-ps	A-B	2001 OG108	nt1	89-110	flat115-120.fits	wavecal115-120.fits	A-B	HD3421	G2Ib-II	6.323	5.431	nt1	111-114	flat115-120.fits	wavecal115-120.fits
+OBS_SET	Prism	moving-ps	A-B	1989 TS1	nt1	121-140	flat115-120.fits	wavecal115-120.fits	A-B	HD 12235	G2IV	6.5	0.0	nt1	141-146	flat147-152.fits	wavecal147-152.fits
+OBS_SET	Prism	moving-ps	A-B	Carolyn	nt1	165-184	flat159-164.fits	wavecal159-164.fits	A-B	HD 12235	G2IV	6.5	0.0	nt1	141-146	flat147-152.fits	wavecal147-152.fits
+OBS_SET	Prism	fixed-ps	A-B	Ennomos	nt1	197-216	flat191-196.fits	wavecal191-196.fits	A-B	HD 15084	F7V	8.71	8.18	nt1	185-190	flat191-196.fits	wavecal191-196.fits
+
+# Lamp calibrations
+FLAT_FILE_PREFIX = flat
+ARC_FILE_PREFIX = arc
+CAL_SETS = 7-12,19-24,51-56,83-88,115-120,147-152,159-164,191-196,223-228
+
+# Notes
+# I skipped 31-32 for the code does not generate spectra for file 32
+# 
+# 
+# 
+# 
